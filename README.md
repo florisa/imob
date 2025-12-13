@@ -18,6 +18,6 @@ pip install -r requirements.txt
 python manage.py runserver
 
 # Pages:
-http://127.0.0.1:8000/
-http://127.0.0.1:8000/admin
-http://127.0.0.1:8000/imóveis
+- http://127.0.0.1:8000/
+- http://127.0.0.1:8000/admin
+- http://127.0.0.1:8000/imóveis
