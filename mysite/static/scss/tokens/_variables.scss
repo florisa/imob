@@ -1,0 +1,175 @@
+@import '../utilities/maps';
+
+:root {
+    // ####### Mobile #######
+    // border
+    --imob-metric-border-width-none: var(--imob-0);
+    --imob-metric-border-width-light: var(--imob-1);
+    --imob-metric-border-width-default: var(--imob-2);
+    --imob-metric-border-width-bold: var(--imob-4);
+    --imob-metric-border-width-heavy: var(--imob-8);
+    // border-radius
+    --imob-metric-border-radius-none: var(--imob-0);
+    --imob-metric-border-radius-small: var(--imob-2);
+    --imob-metric-border-radius-default: var(--theme-border-radius); // TODO: Theming Variable Bsp.: --theme-border-radius
+    --imob-metric-border-radius-large: var(--imob-8);
+    --imob-metric-border-radius-circle: 50%;
+
+    // component
+    --imob-component-badge-space-left: var(--imob-12);
+    --imob-component-description-list-term-max-width: var(--imob-352);
+    --imob-component-alert-icon-size: var(--imob-32);
+    --imob-component-kopfzeile-font-family: "Fira Sans", "Fira Sans Regular", "Noto Sans", "Noto Sans Regular", "SF Pro Text", "Segoe UI", SegoeUI, Roboto, Arial, Helvetica, sans-serif;
+    --imob-component-kopfzeile-font-size: var(--imob-font-size-14);
+    --imob-component-kopfzeile-line-height: var(--imob-font-size-16);
+    --imob-component-kopfzeile-padding: var(--imob-7);
+
+    // dimensions
+    --imob-metric-dimension-2x-small: var(--imob-8);
+    --imob-metric-dimension-x-small: var(--imob-16);
+    --imob-metric-dimension-small: var(--imob-20);
+    --imob-metric-dimension-default: var(--imob-24);
+    --imob-metric-dimension-large: var(--imob-32);
+    --imob-metric-dimension-x-large: var(--imob-48);
+    --imob-metric-dimension-2x-large: var(--imob-56);
+    --imob-metric-dimension-3x-large: var(--imob-64);
+    --imob-metric-dimension-4x-large: var(--imob-80);
+    --imob-metric-dimension-5x-large: var(--imob-96);
+    // dimensions-media
+    --imob-metric-dimension-media-small: var(--imob-96);
+    --imob-metric-dimension-media-default: var(--imob-160);
+    --imob-metric-dimension-media-large: var(--imob-240);
+
+    // screen-size
+    --imob-metric-screen-size: var(--imob-360);
+
+    // space
+    --imob-metric-space-none: var(--imob-0);
+    --imob-metric-space-2x-small: var(--imob-2);
+    --imob-metric-space-x-small: var(--imob-4);
+    --imob-metric-space-small: var(--imob-8);
+    --imob-metric-space-default: var(--imob-16);
+    --imob-metric-space-large: var(--imob-24);
+    --imob-metric-space-x-large: var(--imob-32);
+
+    // text
+    --imob-typography-font-family-default: var(--imob-typography-font-family-fira-sans);
+
+    // typography-line-height
+    --imob-typography-line-height-static-medium: var(--imob-font-size-24);
+    --imob-typography-line-height-static-large: var(--imob-font-size-32);
+    --imob-typography-line-height-adaptive-medium: var(--imob-font-size-24);
+    --imob-typography-line-height-adaptive-large: var(--imob-font-size-32);
+    --imob-typography-line-height-adaptive-x-large: var(--imob-font-size-40);
+    --imob-typography-line-height-adaptive-2x-large: var(--imob-font-size-56);
+
+    // // typography-font-size
+    // --imob-component-kopfzeile-font-size: var(--imob-font-size-12);
+    --imob-typography-font-size-static-small: var(--imob-font-size-16);
+    --imob-typography-font-size-static-medium: var(--imob-font-size-18);
+    --imob-typography-font-size-static-large: var(--imob-font-size-21);
+    --imob-typography-font-size-adaptive-medium: var(--imob-font-size-21);
+    --imob-typography-font-size-adaptive-large: var(--imob-font-size-26);
+    --imob-typography-font-size-adaptive-x-large: var(--imob-font-size-32);
+    --imob-typography-font-size-adaptive-2x-large: var(--imob-font-size-48);
+
+    // text-spacing
+    // spacing-baseline
+    --imob-metric-baseline-body-default-padding-top: var(--imob-6);
+    --imob-metric-baseline-body-default-padding-bottom: var(--imob-2);
+    --imob-metric-baseline-body-large-padding-top: var(--imob-1);
+    --imob-metric-baseline-body-large-padding-bottom: var(--imob-7);
+    --imob-metric-baseline-body-small-padding-top: var(--imob-7);
+    --imob-metric-baseline-body-small-padding-bottom: var(--imob-1);
+
+    --imob-metric-baseline-heading-display-padding-top: var(--imob-12);
+    --imob-metric-baseline-heading-display-padding-bottom: var(--imob-12);
+    --imob-metric-baseline-heading-x-large-padding-top: var(--imob-9);
+    --imob-metric-baseline-heading-x-large-padding-bottom: var(--imob-7);
+    --imob-metric-baseline-heading-large-padding-top: var(--imob-7);
+    --imob-metric-baseline-heading-large-padding-bottom: var(--imob-9);
+    --imob-metric-baseline-heading-medium-padding-top: var(--imob-5);
+    --imob-metric-baseline-heading-medium-padding-bottom: var(--imob-3);
+    --imob-metric-baseline-heading-small-padding-top: var(--imob-6);
+    --imob-metric-baseline-heading-small-padding-bottom: var(--imob-2);
+
+    --imob-metric-baseline-title-large-padding-top: var(--imob-7);
+    --imob-metric-baseline-title-large-padding-bottom: var(--imob-9);
+    --imob-metric-baseline-title-default-padding-top: var(--imob-5);
+    --imob-metric-baseline-title-default-padding-bottom: var(--imob-3);
+    --imob-metric-baseline-title-small-padding-top: var(--imob-6);
+    --imob-metric-baseline-title-small-padding-bottom: var(--imob-2);
+
+    --imob-metric-baseline-preline-large-padding-top: var(--imob-1);
+    --imob-metric-baseline-preline-large-padding-bottom: var(--imob-7);
+    --imob-metric-baseline-preline-default-padding-top: var(--imob-6);
+    --imob-metric-baseline-preline-default-padding-bottom: var(--imob-2);
+    --imob-metric-baseline-preline-small-padding-top: var(--imob-7);
+    --imob-metric-baseline-preline-small-padding-bottom: var(--imob-1);
+
+    --imob-metric-baseline-subline-large-padding-top: var(--imob-1);
+    --imob-metric-baseline-subline-large-padding-bottom: var(--imob-7);
+    --imob-metric-baseline-subline-default-padding-top: var(--imob-6);
+    --imob-metric-baseline-subline-default-padding-bottom: var(--imob-2);
+    --imob-metric-baseline-subline-small-padding-top: var(--imob-7);
+    --imob-metric-baseline-subline-small-padding-bottom: var(--imob-9);
+
+    --imob-metric-baseline-label-large-padding-top: var(--imob-1);
+    --imob-metric-baseline-label-large-padding-bottom: var(--imob-7);
+    --imob-metric-baseline-label-default-padding-top: var(--imob-6);
+    --imob-metric-baseline-label-default-padding-bottom: var(--imob-2);
+    --imob-metric-baseline-label-small-padding-top: var(--imob-7);
+    --imob-metric-baseline-label-small-padding-bottom: var(--imob-1);
+
+    // typography-font-weight
+    --imob-typography-font-weight-regular: 400;
+    --imob-typography-font-weight-medium: 500;
+    --imob-typography-font-weight-semi-bold: 600;
+
+    // ####### Desktop #######
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        // component
+        --imob-component-kopfzeile-padding: var(--imob-7);
+        --imob-component-alert-icon-size: var(--imob-40);
+        --imob-component-kopfzeile-font-size: var(--imob-font-size-16);
+        --imob-component-kopfzeile-line-height: var(--imob-font-size-20);
+        --imob-component-kopfzeile-padding: var(--imob-5);
+
+        // dimensions
+        --imob-metric-dimension-media-small: var(--imob-128);
+        --imob-metric-dimension-media-default: var(--imob-192);
+        --imob-metric-dimension-media-large: var(--imob-360);
+
+        // screen-size
+        --imob-metric-screen-size: var(--imob-1920);
+
+        // typography--line-height
+        --imob-typography-line-height-adaptive-medium: var(--imob-font-size-32);
+        --imob-typography-line-height-adaptive-large: var(--imob-font-size-40);
+        --imob-typography-line-height-adaptive-x-large: var(--imob-font-size-56);
+        --imob-typography-line-height-adaptive-2x-large: var(--imob-font-size-80);
+
+        // typography-font-size
+        --imob-typography-font-size-adaptive-medium: var(--imob-font-size-24);
+        --imob-typography-font-size-adaptive-large: var(--imob-font-size-32);
+        --imob-typography-font-size-adaptive-x-large: var(--imob-font-size-48);
+        --imob-typography-font-size-adaptive-2x-large: var(--imob-font-size-72);
+
+        // text-spacing
+        // spacing-baseline
+        --imob-metric-baseline-heading-x-large-padding-top: var(--imob-12);
+        --imob-metric-baseline-heading-x-large-padding-bottom: var(--imob-12);
+        --imob-metric-baseline-heading-large-padding-top: var(--imob-9);
+        --imob-metric-baseline-heading-large-padding-bottom: var(--imob-7);
+        --imob-metric-baseline-heading-medium-padding-top: var(--imob-8);
+        --imob-metric-baseline-heading-medium-padding-bottom: var(--imob-8);
+        --imob-metric-baseline-heading-display-padding-top: var(--imob-16);
+        --imob-metric-baseline-heading-display-padding-bottom: var(--imob-16);
+
+        --imob-metric-baseline-title-large-padding-top: var(--imob-9);
+        --imob-metric-baseline-title-large-padding-bottom: var(--imob-7);
+        --imob-metric-baseline-title-default-padding-top: var(--imob-8);
+        --imob-metric-baseline-title-default-padding-bottom: var(--imob-8);
+
+    }
+}

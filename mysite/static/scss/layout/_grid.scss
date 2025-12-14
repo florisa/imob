@@ -1,0 +1,140 @@
+@use "sass:math";
+@import "../utilities/maps";
+
+@mixin imob-grid {
+  // Settings
+  $grid-columns: 12 !default;
+  $grid-gutter: 2rem !default;
+
+  // Container Elements
+  %container-base {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc($grid-gutter * 0.5);
+    padding-right: calc($grid-gutter * 0.5);
+    box-sizing: border-box;
+  }
+
+  // Columns
+  [class^="imob-col"],
+  [class*="imob-col"] {
+    padding: math.div($grid-gutter, 2);
+    box-sizing: border-box;
+  }
+
+  .imob {
+    // Container
+    &-container {
+      @extend %container-base;
+      max-width: map-get($grid-breakpoints, "xxl");
+    }
+    &-container-fluid {
+      @extend %container-base;
+    }
+
+    // Row
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: math.div($grid-gutter, -2);
+      margin-right: math.div($grid-gutter, -2);
+      box-sizing: border-box;
+
+      > * {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    // Col
+    &-col {
+      flex: 1 0 0;
+    }
+
+    // Alignment
+    // All items
+    &-align-items {
+      &-start {
+        align-items: flex-start !important;
+      }
+      &-center {
+        align-items: center !important;
+      }
+      &-end {
+        align-items: flex-end !important;
+      }
+    }
+    // Item self
+    &-align-self {
+      &-start {
+        align-self: flex-start !important;
+      }
+      &-center {
+        align-self: center !important;
+      }
+      &-end {
+        align-self: flex-end !important;
+      }
+    }
+    // Horizontal alignment
+    &-justify-content {
+      &-start {
+        justify-content: flex-start !important;
+      }
+      &-center {
+        justify-content: center !important;
+      }
+      &-end {
+        justify-content: flex-end !important;
+      }
+      &-around {
+        justify-content: space-around !important;
+      }
+      &-between {
+        justify-content: space-between !important;
+      }
+      &-evenly {
+        justify-content: space-evenly !important;
+      }
+    }
+  }
+
+  // Create non-breakpoint specific columns and column offsets
+  @for $i from 1 through $grid-columns {
+    .imob-col-#{$i} {
+      flex: 0 0 auto;
+      width: (math.div(100%, $grid-columns) * $i);
+    }
+    .imob-col-offset-#{$i} {
+      margin-left: (math.div(100%, $grid-columns) * $i);
+    }
+  }
+
+  // Create breakpoint specific columns
+  @each $name, $value in $grid-breakpoints {
+    @if $value != 0 {
+      @media (min-width: $value) {
+        .imob-container {
+          max-width: map-get($container-max-widths, $name);
+        }
+
+        .imob-col-#{$name}-offset-0 {
+          margin-left: 0;
+        }
+
+        @for $i from 1 through $grid-columns {
+          .imob-col-#{$name}-#{$i} {
+            width: (math.div(100%, $grid-columns) * $i);
+          }
+          .imob-col-#{$name}-offset-#{$i} {
+            margin-left: (math.div(100%, $grid-columns) * $i);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include imob-grid;

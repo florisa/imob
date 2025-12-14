@@ -1,0 +1,1246 @@
+// ############### COLORS OKLCH ###############
+// -- darkblue --
+:root {
+    /* Dark Blue 025 */
+    --imob-darkblue-025-lightness: 97.29%;
+    --imob-darkblue-025-chroma: 0.0081;
+    --imob-darkblue-025-hue: 261.5;
+
+    /* Dark Blue 050 */
+    --imob-darkblue-050-lightness: 95.28%;
+    --imob-darkblue-050-chroma: 0.0144;
+    --imob-darkblue-050-hue: 267.3;
+
+    /* Dark Blue 100 */
+    --imob-darkblue-100-lightness: 90.65%;
+    --imob-darkblue-100-chroma: 0.0284;
+    --imob-darkblue-100-hue: 265.8;
+
+    /* Dark Blue 150 */
+    --imob-darkblue-150-lightness: 87.02%;
+    --imob-darkblue-150-chroma: 0.0397;
+    --imob-darkblue-150-hue: 264.3;
+
+    /* Dark Blue 200 */
+    --imob-darkblue-200-lightness: 82.15%;
+    --imob-darkblue-200-chroma: 0.0557;
+    --imob-darkblue-200-hue: 265.6;
+
+    /* Dark Blue 250 */
+    --imob-darkblue-250-lightness: 78.4%;
+    --imob-darkblue-250-chroma: 0.0671;
+    --imob-darkblue-250-hue: 265.4;
+
+    /* Dark Blue 300 */
+    --imob-darkblue-300-lightness: 73.65%;
+    --imob-darkblue-300-chroma: 0.083;
+    --imob-darkblue-300-hue: 265.2;
+
+    /* Dark Blue 350 */
+    --imob-darkblue-350-lightness: 69.99%;
+    --imob-darkblue-350-chroma: 0.0926;
+    --imob-darkblue-350-hue: 265;
+
+    /* Dark Blue 400 */
+    --imob-darkblue-400-lightness: 66.28%;
+    --imob-darkblue-400-chroma: 0.1035;
+    --imob-darkblue-400-hue: 264.7;
+
+    /* Dark Blue 450 */
+    --imob-darkblue-450-lightness: 61.27%;
+    --imob-darkblue-450-chroma: 0.1195;
+    --imob-darkblue-450-hue: 265.5;
+
+    /* Dark Blue 500 */
+    --imob-darkblue-500-lightness: 57.58%;
+    --imob-darkblue-500-chroma: 0.1302;
+    --imob-darkblue-500-hue: 265.1;
+
+    /* Dark Blue 550 */
+    --imob-darkblue-550-lightness: 52.55%;
+    --imob-darkblue-550-chroma: 0.1462;
+    --imob-darkblue-550-hue: 265.4;
+
+    /* Dark Blue 600 */
+    --imob-darkblue-600-lightness: 48.97%;
+    --imob-darkblue-600-chroma: 0.1552;
+    --imob-darkblue-600-hue: 264.9;
+
+    /* Dark Blue 650 */
+    --imob-darkblue-650-lightness: 45%;
+    --imob-darkblue-650-chroma: 0.166;
+    --imob-darkblue-650-hue: 265.1;
+
+    /* Dark Blue 700 */
+    --imob-darkblue-700-lightness: 40.4%;
+    --imob-darkblue-700-chroma: 0.1713;
+    --imob-darkblue-700-hue: 265.1;
+
+    /* Dark Blue 750 */
+    --imob-darkblue-750-lightness: 36.29%;
+    --imob-darkblue-750-chroma: 0.1831;
+    --imob-darkblue-750-hue: 265;
+
+    /* Dark Blue 800 */
+    --imob-darkblue-800-lightness: 32.18%;
+    --imob-darkblue-800-chroma: 0.1841;
+    --imob-darkblue-800-hue: 265;
+
+    /* Dark Blue 850 */
+    --imob-darkblue-850-lightness: 28.85%;
+    --imob-darkblue-850-chroma: 0.1905;
+    --imob-darkblue-850-hue: 264.9;
+
+    /* Dark Blue 900 */
+    --imob-darkblue-900-lightness: 24.13%;
+    --imob-darkblue-900-chroma: 0.1635;
+    --imob-darkblue-900-hue: 266.4;
+
+    /* Dark Blue 950 */
+    --imob-darkblue-950-lightness: 19.3%;
+    --imob-darkblue-950-chroma: 0.1283;
+    --imob-darkblue-950-hue: 268.4;
+}
+
+// -- lightblue --
+:root {
+    /* Light Blue 025 */
+    --imob-lightblue-025-lightness: 97.93%;
+    --imob-lightblue-025-chroma: 0.0112;
+    --imob-lightblue-025-hue: 225.1;
+
+    /* Light Blue 050 */
+    --imob-lightblue-050-lightness: 95.27%;
+    --imob-lightblue-050-chroma: 0.0248;
+    --imob-lightblue-050-hue: 223.4;
+
+    /* Light Blue 100 */
+    --imob-lightblue-100-lightness: 90.47%;
+    --imob-lightblue-100-chroma: 0.0495;
+    --imob-lightblue-100-hue: 225.8;
+
+    /* Light Blue 150 */
+    --imob-lightblue-150-lightness: 86.16%;
+    --imob-lightblue-150-chroma: 0.0716;
+    --imob-lightblue-150-hue: 224.5;
+
+    /* Light Blue 200 */
+    --imob-lightblue-200-lightness: 82.29%;
+    --imob-lightblue-200-chroma: 0.0929;
+    --imob-lightblue-200-hue: 223.5;
+
+    /* Light Blue 250 */
+    --imob-lightblue-250-lightness: 77.87%;
+    --imob-lightblue-250-chroma: 0.1157;
+    --imob-lightblue-250-hue: 223.4;
+
+    /* Light Blue 300 */
+    --imob-lightblue-300-lightness: 72.6%;
+    --imob-lightblue-300-chroma: 0.1365;
+    --imob-lightblue-300-hue: 224.1;
+
+    /* Light Blue 350 */
+    --imob-lightblue-350-lightness: 69.31%;
+    --imob-lightblue-350-chroma: 0.1331;
+    --imob-lightblue-350-hue: 226.5;
+
+    /* Light Blue 400 */
+    --imob-lightblue-400-lightness: 65.7%;
+    --imob-lightblue-400-chroma: 0.126;
+    --imob-lightblue-400-hue: 226.3;
+
+    /* Light Blue 450 */
+    --imob-lightblue-450-lightness: 60.49%;
+    --imob-lightblue-450-chroma: 0.1218;
+    --imob-lightblue-450-hue: 230.9;
+
+    /* Light Blue 500 */
+    --imob-lightblue-500-lightness: 56.36%;
+    --imob-lightblue-500-chroma: 0.1102;
+    --imob-lightblue-500-hue: 228.3;
+
+    /* Light Blue 550 */
+    --imob-lightblue-550-lightness: 51.87%;
+    --imob-lightblue-550-chroma: 0.1098;
+    --imob-lightblue-550-hue: 234.8;
+
+    /* Light Blue 600 */
+    --imob-lightblue-600-lightness: 47.63%;
+    --imob-lightblue-600-chroma: 0.1034;
+    --imob-lightblue-600-hue: 236.6;
+
+    /* Light Blue 650 */
+    --imob-lightblue-650-lightness: 42.88%;
+    --imob-lightblue-650-chroma: 0.0984;
+    --imob-lightblue-650-hue: 240.1;
+
+    /* Light Blue 700 */
+    --imob-lightblue-700-lightness: 39.45%;
+    --imob-lightblue-700-chroma: 0.0961;
+    --imob-lightblue-700-hue: 243.4;
+
+    /* Light Blue 750 */
+    --imob-lightblue-750-lightness: 34.98%;
+    --imob-lightblue-750-chroma: 0.0901;
+    --imob-lightblue-750-hue: 246.1;
+
+    /* Light Blue 800 */
+    --imob-lightblue-800-lightness: 31%;
+    --imob-lightblue-800-chroma: 0.0905;
+    --imob-lightblue-800-hue: 251.1;
+
+    /* Light Blue 850 */
+    --imob-lightblue-850-lightness: 26.58%;
+    --imob-lightblue-850-chroma: 0.0837;
+    --imob-lightblue-850-hue: 253.7;
+
+    /* Light Blue 900 */
+    --imob-lightblue-900-lightness: 22.62%;
+    --imob-lightblue-900-chroma: 0.0845;
+    --imob-lightblue-900-hue: 258.2;
+
+    /* Light Blue 950 */
+    --imob-lightblue-950-lightness: 18.48%;
+    --imob-lightblue-950-chroma: 0.0867;
+    --imob-lightblue-950-hue: 262.2;
+}
+
+// -- turquoise --
+:root {
+    /* Turquoise 025 */
+    --imob-turquoise-025-lightness: 97.64%;
+    --imob-turquoise-025-chroma: 0.0123;
+    --imob-turquoise-025-hue: 172.2;
+
+    /* Turquoise 050 */
+    --imob-turquoise-050-lightness: 95.45%;
+    --imob-turquoise-050-chroma: 0.0269;
+    --imob-turquoise-050-hue: 171.7;
+
+    /* Turquoise 100 */
+    --imob-turquoise-100-lightness: 90.68%;
+    --imob-turquoise-100-chroma: 0.0593;
+    --imob-turquoise-100-hue: 170.5;
+
+    /* Turquoise 150 */
+    --imob-turquoise-150-lightness: 85.52%;
+    --imob-turquoise-150-chroma: 0.0888;
+    --imob-turquoise-150-hue: 171;
+
+    /* Turquoise 200 */
+    --imob-turquoise-200-lightness: 81.34%;
+    --imob-turquoise-200-chroma: 0.1071;
+    --imob-turquoise-200-hue: 170.7;
+
+    /* Turquoise 250 */
+    --imob-turquoise-250-lightness: 77.21%;
+    --imob-turquoise-250-chroma: 0.1209;
+    --imob-turquoise-250-hue: 170.3;
+
+    /* Turquoise 300 */
+    --imob-turquoise-300-lightness: 72.07%;
+    --imob-turquoise-300-chroma: 0.1298;
+    --imob-turquoise-300-hue: 170.4;
+
+    /* Turquoise 350 */
+    --imob-turquoise-350-lightness: 68.64%;
+    --imob-turquoise-350-chroma: 0.1341;
+    --imob-turquoise-350-hue: 170;
+
+    /* Turquoise 400 */
+    --imob-turquoise-400-lightness: 63.71%;
+    --imob-turquoise-400-chroma: 0.1258;
+    --imob-turquoise-400-hue: 170.2;
+
+    /* Turquoise 450 */
+    --imob-turquoise-450-lightness: 59.21%;
+    --imob-turquoise-450-chroma: 0.1187;
+    --imob-turquoise-450-hue: 168.9;
+
+    /* Turquoise 500 */
+    --imob-turquoise-500-lightness: 54.7%;
+    --imob-turquoise-500-chroma: 0.1094;
+    --imob-turquoise-500-hue: 169.1;
+
+    /* Turquoise 550 */
+    --imob-turquoise-550-lightness: 51.64%;
+    --imob-turquoise-550-chroma: 0.1031;
+    --imob-turquoise-550-hue: 169.3;
+
+    /* Turquoise 600 */
+    --imob-turquoise-600-lightness: 46.91%;
+    --imob-turquoise-600-chroma: 0.0948;
+    --imob-turquoise-600-hue: 168.1;
+
+    /* Turquoise 650 */
+    --imob-turquoise-650-lightness: 42.12%;
+    --imob-turquoise-650-chroma: 0.0848;
+    --imob-turquoise-650-hue: 168.5;
+
+    /* Turquoise 700 */
+    --imob-turquoise-700-lightness: 38.81%;
+    --imob-turquoise-700-chroma: 0.079;
+    --imob-turquoise-700-hue: 167.5;
+
+    /* Turquoise 750 */
+    --imob-turquoise-750-lightness: 33.77%;
+    --imob-turquoise-750-chroma: 0.0682;
+    --imob-turquoise-750-hue: 168.2;
+
+    /* Turquoise 800 */
+    --imob-turquoise-800-lightness: 30.31%;
+    --imob-turquoise-800-chroma: 0.0608;
+    --imob-turquoise-800-hue: 168.9;
+
+    /* Turquoise 850 */
+    --imob-turquoise-850-lightness: 26.7%;
+    --imob-turquoise-850-chroma: 0.0545;
+    --imob-turquoise-850-hue: 167.3;
+
+    /* Turquoise 900 */
+    --imob-turquoise-900-lightness: 21.11%;
+    --imob-turquoise-900-chroma: 0.0425;
+    --imob-turquoise-900-hue: 168.5;
+
+    /* Turquoise 950 */
+    --imob-turquoise-950-lightness: 17.16%;
+    --imob-turquoise-950-chroma: 0.0342;
+    --imob-turquoise-950-hue: 169.5;
+}
+
+// -- green --
+:root {
+    /* Green 025 */
+    --imob-green-025-lightness: 97.95%;
+    --imob-green-025-chroma: 0.0066;
+    --imob-green-025-hue: 151.9;
+
+    /* Green 050 */
+    --imob-green-050-lightness: 95.9%;
+    --imob-green-050-chroma: 0.0151;
+    --imob-green-050-hue: 148.4;
+
+    /* Green 100 */
+    --imob-green-100-lightness: 90.51%;
+    --imob-green-100-chroma: 0.0375;
+    --imob-green-100-hue: 148.6;
+
+    /* Green 150 */
+    --imob-green-150-lightness: 86.51%;
+    --imob-green-150-chroma: 0.0556;
+    --imob-green-150-hue: 148.3;
+
+    /* Green 200 */
+    --imob-green-200-lightness: 81.85%;
+    --imob-green-200-chroma: 0.074;
+    --imob-green-200-hue: 149;
+
+    /* Green 250 */
+    --imob-green-250-lightness: 77.04%;
+    --imob-green-250-chroma: 0.092;
+    --imob-green-250-hue: 148.1;
+
+    /* Green 300 */
+    --imob-green-300-lightness: 72.45%;
+    --imob-green-300-chroma: 0.1087;
+    --imob-green-300-hue: 148.5;
+
+    /* Green 350 */
+    --imob-green-350-lightness: 68.55%;
+    --imob-green-350-chroma: 0.1228;
+    --imob-green-350-hue: 148.4;
+
+    /* Green 400 */
+    --imob-green-400-lightness: 63.71%;
+    --imob-green-400-chroma: 0.1312;
+    --imob-green-400-hue: 148.6;
+
+    /* Green 450 */
+    --imob-green-450-lightness: 59.26%;
+    --imob-green-450-chroma: 0.1414;
+    --imob-green-450-hue: 148.4;
+
+    /* Green 500 */
+    --imob-green-500-lightness: 54.55%;
+    --imob-green-500-chroma: 0.1469;
+    --imob-green-500-hue: 148.4;
+
+    /* Green 550 */
+    --imob-green-550-lightness: 50.64%;
+    --imob-green-550-chroma: 0.1479;
+    --imob-green-550-hue: 147.7;
+
+    /* Green 600 */
+    --imob-green-600-lightness: 45.99%;
+    --imob-green-600-chroma: 0.1381;
+    --imob-green-600-hue: 146.6;
+
+    /* Green 650 */
+    --imob-green-650-lightness: 42.82%;
+    --imob-green-650-chroma: 0.1318;
+    --imob-green-650-hue: 145.7;
+
+    /* Green 700 */
+    --imob-green-700-lightness: 38.01%;
+    --imob-green-700-chroma: 0.118;
+    --imob-green-700-hue: 145.4;
+
+    /* Green 750 */
+    --imob-green-750-lightness: 34.7%;
+    --imob-green-750-chroma: 0.1103;
+    --imob-green-750-hue: 144.6;
+
+    /* Green 800 */
+    --imob-green-800-lightness: 29.62%;
+    --imob-green-800-chroma: 0.095;
+    --imob-green-800-hue: 144.4;
+
+    /* Green 850 */
+    --imob-green-850-lightness: 26.11%;
+    --imob-green-850-chroma: 0.0844;
+    --imob-green-850-hue: 144.1;
+
+    /* Green 900 */
+    --imob-green-900-lightness: 20.63%;
+    --imob-green-900-chroma: 0.0664;
+    --imob-green-900-hue: 144.2;
+
+    /* Green 950 */
+    --imob-green-950-lightness: 16.76%;
+    --imob-green-950-chroma: 0.0542;
+    --imob-green-950-hue: 144.1;
+}
+
+// -- limette --
+:root {
+    /* Limette 025 */
+    --imob-limette-025-lightness: 97.02%;
+    --imob-limette-025-chroma: 0.0694;
+    --imob-limette-025-hue: 120.6;
+
+    /* Limette 050 */
+    --imob-limette-050-lightness: 95.09%;
+    --imob-limette-050-chroma: 0.1155;
+    --imob-limette-050-hue: 120.8;
+
+    /* Limette 100 */
+    --imob-limette-100-lightness: 90.24%;
+    --imob-limette-100-chroma: 0.1656;
+    --imob-limette-100-hue: 120.8;
+
+    /* Limette 150 */
+    --imob-limette-150-lightness: 86.02%;
+    --imob-limette-150-chroma: 0.1845;
+    --imob-limette-150-hue: 121.2;
+
+    /* Limette 200 */
+    --imob-limette-200-lightness: 81.36%;
+    --imob-limette-200-chroma: 0.1887;
+    --imob-limette-200-hue: 120.7;
+
+    /* Limette 250 */
+    --imob-limette-250-lightness: 77.69%;
+    --imob-limette-250-chroma: 0.1864;
+    --imob-limette-250-hue: 121;
+
+    /* Limette 300 */
+    --imob-limette-300-lightness: 73.21%;
+    --imob-limette-300-chroma: 0.1755;
+    --imob-limette-300-hue: 120.9;
+
+    /* Limette 350 */
+    --imob-limette-350-lightness: 68.65%;
+    --imob-limette-350-chroma: 0.1645;
+    --imob-limette-350-hue: 120.9;
+
+    /* Limette 400 */
+    --imob-limette-400-lightness: 65.38%;
+    --imob-limette-400-chroma: 0.1582;
+    --imob-limette-400-hue: 121.8;
+
+    /* Limette 450 */
+    --imob-limette-450-lightness: 60.7%;
+    --imob-limette-450-chroma: 0.1467;
+    --imob-limette-450-hue: 121.7;
+
+    /* Limette 500 */
+    --imob-limette-500-lightness: 55.93%;
+    --imob-limette-500-chroma: 0.135;
+    --imob-limette-500-hue: 121.6;
+
+    /* Limette 550 */
+    --imob-limette-550-lightness: 51.06%;
+    --imob-limette-550-chroma: 0.1231;
+    --imob-limette-550-hue: 121.4;
+
+    /* Limette 600 */
+    --imob-limette-600-lightness: 47.75%;
+    --imob-limette-600-chroma: 0.115;
+    --imob-limette-600-hue: 121.3;
+
+    /* Limette 650 */
+    --imob-limette-650-lightness: 42.55%;
+    --imob-limette-650-chroma: 0.1032;
+    --imob-limette-650-hue: 122;
+
+    /* Limette 700 */
+    --imob-limette-700-lightness: 39.09%;
+    --imob-limette-700-chroma: 0.0946;
+    --imob-limette-700-hue: 121.8;
+
+    /* Limette 750 */
+    --imob-limette-750-lightness: 35.55%;
+    --imob-limette-750-chroma: 0.0858;
+    --imob-limette-750-hue: 121.6;
+
+    /* Limette 800 */
+    --imob-limette-800-lightness: 30%;
+    --imob-limette-800-chroma: 0.0727;
+    --imob-limette-800-hue: 121.9;
+
+    /* Limette 850 */
+    --imob-limette-850-lightness: 26.21%;
+    --imob-limette-850-chroma: 0.0631;
+    --imob-limette-850-hue: 121.3;
+
+    /* Limette 900 */
+    --imob-limette-900-lightness: 22.14%;
+    --imob-limette-900-chroma: 0.0541;
+    --imob-limette-900-hue: 122.7;
+
+    /* Limette 950 */
+    --imob-limette-950-lightness: 18.08%;
+    --imob-limette-950-chroma: 0.0434;
+    --imob-limette-950-hue: 121.1;
+}
+
+// -- yellow --
+:root {
+    /* Yellow 025 */
+    --imob-yellow-025-lightness: 97.15%;
+    --imob-yellow-025-chroma: 0.1207;
+    --imob-yellow-025-hue: 106.7;
+
+    /* Yellow 050 */
+    --imob-yellow-050-lightness: 94.9%;
+    --imob-yellow-050-chroma: 0.1515;
+    --imob-yellow-050-hue: 104.1;
+
+    /* Yellow 100 */
+    --imob-yellow-100-lightness: 90.5%;
+    --imob-yellow-100-chroma: 0.1776;
+    --imob-yellow-100-hue: 98.18;
+
+    /* Yellow 150 */
+    --imob-yellow-150-lightness: 86.85%;
+    --imob-yellow-150-chroma: 0.1781;
+    --imob-yellow-150-hue: 94.26;
+
+    /* Yellow 200 */
+    --imob-yellow-200-lightness: 82.83%;
+    --imob-yellow-200-chroma: 0.1699;
+    --imob-yellow-200-hue: 94.33;
+
+    /* Yellow 250 */
+    --imob-yellow-250-lightness: 78.01%;
+    --imob-yellow-250-chroma: 0.1597;
+    --imob-yellow-250-hue: 92.52;
+
+    /* Yellow 300 */
+    --imob-yellow-300-lightness: 73.93%;
+    --imob-yellow-300-chroma: 0.1513;
+    --imob-yellow-300-hue: 92.61;
+
+    /* Yellow 350 */
+    --imob-yellow-350-lightness: 69.79%;
+    --imob-yellow-350-chroma: 0.1428;
+    --imob-yellow-350-hue: 92.72;
+
+    /* Yellow 400 */
+    --imob-yellow-400-lightness: 65.58%;
+    --imob-yellow-400-chroma: 0.1343;
+    --imob-yellow-400-hue: 92.85;
+
+    /* Yellow 450 */
+    --imob-yellow-450-lightness: 61.31%;
+    --imob-yellow-450-chroma: 0.1255;
+    --imob-yellow-450-hue: 92.99;
+
+    /* Yellow 500 */
+    --imob-yellow-500-lightness: 56.96%;
+    --imob-yellow-500-chroma: 0.1166;
+    --imob-yellow-500-hue: 93.17;
+
+    /* Yellow 550 */
+    --imob-yellow-550-lightness: 52.05%;
+    --imob-yellow-550-chroma: 0.1064;
+    --imob-yellow-550-hue: 91.55;
+
+    /* Yellow 600 */
+    --imob-yellow-600-lightness: 47.57%;
+    --imob-yellow-600-chroma: 0.0973;
+    --imob-yellow-600-hue: 91.85;
+
+    /* Yellow 650 */
+    --imob-yellow-650-lightness: 44.52%;
+    --imob-yellow-650-chroma: 0.0911;
+    --imob-yellow-650-hue: 92.09;
+
+    /* Yellow 700 */
+    --imob-yellow-700-lightness: 39.84%;
+    --imob-yellow-700-chroma: 0.0815;
+    --imob-yellow-700-hue: 92.54;
+
+    /* Yellow 750 */
+    --imob-yellow-750-lightness: 34.74%;
+    --imob-yellow-750-chroma: 0.071;
+    --imob-yellow-750-hue: 91.44;
+
+    /* Yellow 800 */
+    --imob-yellow-800-lightness: 31.21%;
+    --imob-yellow-800-chroma: 0.0638;
+    --imob-yellow-800-hue: 90.35;
+
+    /* Yellow 850 */
+    --imob-yellow-850-lightness: 25.99%;
+    --imob-yellow-850-chroma: 0.0531;
+    --imob-yellow-850-hue: 90.14;
+
+    /* Yellow 900 */
+    --imob-yellow-900-lightness: 22.55%;
+    --imob-yellow-900-chroma: 0.0461;
+    --imob-yellow-900-hue: 91.64;
+
+    /* Yellow 950 */
+    --imob-yellow-950-lightness: 18.61%;
+    --imob-yellow-950-chroma: 0.038;
+    --imob-yellow-950-hue: 89.88;
+}
+
+// -- orange --
+:root {
+    /* Orange 025 */
+    --imob-orange-025-lightness: 98%;
+    --imob-orange-025-chroma: 0.0188;
+    --imob-orange-025-hue: 81.5;
+
+    /* Orange 050 */
+    --imob-orange-050-lightness: 95.85%;
+    --imob-orange-050-chroma: 0.0433;
+    --imob-orange-050-hue: 84.57;
+
+    /* Orange 100 */
+    --imob-orange-100-lightness: 91.5%;
+    --imob-orange-100-chroma: 0.0891;
+    --imob-orange-100-hue: 84.2;
+
+    /* Orange 150 */
+    --imob-orange-150-lightness: 87.38%;
+    --imob-orange-150-chroma: 0.1245;
+    --imob-orange-150-hue: 81.4;
+
+    /* Orange 200 */
+    --imob-orange-200-lightness: 83.3%;
+    --imob-orange-200-chroma: 0.1517;
+    --imob-orange-200-hue: 77.01;
+
+    /* Orange 250 */
+    --imob-orange-250-lightness: 79.67%;
+    --imob-orange-250-chroma: 0.1689;
+    --imob-orange-250-hue: 71.24;
+
+    /* Orange 300 */
+    --imob-orange-300-lightness: 74.41%;
+    --imob-orange-300-chroma: 0.1646;
+    --imob-orange-300-hue: 66.86;
+
+    /* Orange 350 */
+    --imob-orange-350-lightness: 70.85%;
+    --imob-orange-350-chroma: 0.1565;
+    --imob-orange-350-hue: 67.04;
+
+    /* Orange 400 */
+    --imob-orange-400-lightness: 66.63%;
+    --imob-orange-400-chroma: 0.1493;
+    --imob-orange-400-hue: 65.13;
+
+    /* Orange 450 */
+    --imob-orange-450-lightness: 61.81%;
+    --imob-orange-450-chroma: 0.1382;
+    --imob-orange-450-hue: 65.47;
+
+    /* Orange 500 */
+    --imob-orange-500-lightness: 57.6%;
+    --imob-orange-500-chroma: 0.1306;
+    --imob-orange-500-hue: 63.7;
+
+    /* Orange 550 */
+    --imob-orange-550-lightness: 52.64%;
+    --imob-orange-550-chroma: 0.1189;
+    --imob-orange-550-hue: 64.21;
+
+    /* Orange 600 */
+    --imob-orange-600-lightness: 48.42%;
+    --imob-orange-600-chroma: 0.1108;
+    --imob-orange-600-hue: 62.67;
+
+    /* Orange 650 */
+    --imob-orange-650-lightness: 44.59%;
+    --imob-orange-650-chroma: 0.1015;
+    --imob-orange-650-hue: 63.27;
+
+    /* Orange 700 */
+    --imob-orange-700-lightness: 40.32%;
+    --imob-orange-700-chroma: 0.0927;
+    --imob-orange-700-hue: 62.06;
+
+    /* Orange 750 */
+    --imob-orange-750-lightness: 36.35%;
+    --imob-orange-750-chroma: 0.0829;
+    --imob-orange-750-hue: 63.06;
+
+    /* Orange 800 */
+    --imob-orange-800-lightness: 32.01%;
+    --imob-orange-800-chroma: 0.0733;
+    --imob-orange-800-hue: 62.53;
+
+    /* Orange 850 */
+    --imob-orange-850-lightness: 27.62%;
+    --imob-orange-850-chroma: 0.0632;
+    --imob-orange-850-hue: 62.68;
+
+    /* Orange 900 */
+    --imob-orange-900-lightness: 22.99%;
+    --imob-orange-900-chroma: 0.0528;
+    --imob-orange-900-hue: 62.35;
+
+    /* Orange 950 */
+    --imob-orange-950-lightness: 18.36%;
+    --imob-orange-950-chroma: 0.0413;
+    --imob-orange-950-hue: 64.82;
+}
+
+// -- red --
+:root {
+    /* Red 025 */
+    --imob-red-025-lightness: 98.03%;
+    --imob-red-025-chroma: 0.0083;
+    --imob-red-025-hue: 25.06;
+
+    /* Red 050 */
+    --imob-red-050-lightness: 95.36%;
+    --imob-red-050-chroma: 0.0217;
+    --imob-red-050-hue: 32.68;
+
+    /* Red 100 */
+    --imob-red-100-lightness: 91.24%;
+    --imob-red-100-chroma: 0.0436;
+    --imob-red-100-hue: 28.25;
+
+    /* Red 150 */
+    --imob-red-150-lightness: 87.71%;
+    --imob-red-150-chroma: 0.0621;
+    --imob-red-150-hue: 29.89;
+
+    /* Red 200 */
+    --imob-red-200-lightness: 83.28%;
+    --imob-red-200-chroma: 0.0854;
+    --imob-red-200-hue: 30.18;
+
+    /* Red 250 */
+    --imob-red-250-lightness: 79.59%;
+    --imob-red-250-chroma: 0.1043;
+    --imob-red-250-hue: 29.15;
+
+    /* Red 300 */
+    --imob-red-300-lightness: 75.15%;
+    --imob-red-300-chroma: 0.1265;
+    --imob-red-300-hue: 28.4;
+
+    /* Red 350 */
+    --imob-red-350-lightness: 71.18%;
+    --imob-red-350-chroma: 0.143;
+    --imob-red-350-hue: 28.92;
+
+    /* Red 400 */
+    --imob-red-400-lightness: 67.04%;
+    --imob-red-400-chroma: 0.1611;
+    --imob-red-400-hue: 28.5;
+
+    /* Red 450 */
+    --imob-red-450-lightness: 63.35%;
+    --imob-red-450-chroma: 0.1717;
+    --imob-red-450-hue: 29.1;
+
+    /* Red 500 */
+    --imob-red-500-lightness: 58.93%;
+    --imob-red-500-chroma: 0.1871;
+    --imob-red-500-hue: 29.12;
+
+    /* Red 550 */
+    --imob-red-550-lightness: 54.9%;
+    --imob-red-550-chroma: 0.1972;
+    --imob-red-550-hue: 29.28;
+
+    /* Red 600 */
+    --imob-red-600-lightness: 50.78%;
+    --imob-red-600-chroma: 0.202;
+    --imob-red-600-hue: 29.22;
+
+    /* Red 650 */
+    --imob-red-650-lightness: 46%;
+    --imob-red-650-chroma: 0.1888;
+    --imob-red-650-hue: 29.23;
+
+    /* Red 700 */
+    --imob-red-700-lightness: 41.84%;
+    --imob-red-700-chroma: 0.1717;
+    --imob-red-700-hue: 29.23;
+
+    /* Red 750 */
+    --imob-red-750-lightness: 37.56%;
+    --imob-red-750-chroma: 0.1541;
+    --imob-red-750-hue: 29.23;
+
+    /* Red 800 */
+    --imob-red-800-lightness: 32.04%;
+    --imob-red-800-chroma: 0.1315;
+    --imob-red-800-hue: 29.23;
+
+    /* Red 850 */
+    --imob-red-850-lightness: 28.62%;
+    --imob-red-850-chroma: 0.1174;
+    --imob-red-850-hue: 29.23;
+
+    /* Red 900 */
+    --imob-red-900-lightness: 23.88%;
+    --imob-red-900-chroma: 0.098;
+    --imob-red-900-hue: 29.23;
+
+    /* Red 950 */
+    --imob-red-950-lightness: 18.89%;
+    --imob-red-950-chroma: 0.0775;
+    --imob-red-950-hue: 29.23;
+}
+
+// -- violet --
+:root {
+    /* Violet 025 */
+    --imob-violet-025-lightness: 97.97%;
+    --imob-violet-025-chroma: 0.0094;
+    --imob-violet-025-hue: 311;
+
+    /* Violet 050 */
+    --imob-violet-050-lightness: 95.12%;
+    --imob-violet-050-chroma: 0.0215;
+    --imob-violet-050-hue: 312.8;
+
+    /* Violet 100 */
+    --imob-violet-100-lightness: 91.07%;
+    --imob-violet-100-chroma: 0.0444;
+    --imob-violet-100-hue: 314;
+
+    /* Violet 150 */
+    --imob-violet-150-lightness: 88%;
+    --imob-violet-150-chroma: 0.0602;
+    --imob-violet-150-hue: 313.2;
+
+    /* Violet 200 */
+    --imob-violet-200-lightness: 83.03%;
+    --imob-violet-200-chroma: 0.0861;
+    --imob-violet-200-hue: 313;
+
+    /* Violet 250 */
+    --imob-violet-250-lightness: 79.26%;
+    --imob-violet-250-chroma: 0.106;
+    --imob-violet-250-hue: 313.5;
+
+    /* Violet 300 */
+    --imob-violet-300-lightness: 75.52%;
+    --imob-violet-300-chroma: 0.123;
+    --imob-violet-300-hue: 313.3;
+
+    /* Violet 350 */
+    --imob-violet-350-lightness: 71.06%;
+    --imob-violet-350-chroma: 0.1442;
+    --imob-violet-350-hue: 313.8;
+
+    /* Violet 400 */
+    --imob-violet-400-lightness: 67.51%;
+    --imob-violet-400-chroma: 0.1583;
+    --imob-violet-400-hue: 313.6;
+
+    /* Violet 450 */
+    --imob-violet-450-lightness: 63.1%;
+    --imob-violet-450-chroma: 0.1778;
+    --imob-violet-450-hue: 313.2;
+
+    /* Violet 500 */
+    --imob-violet-500-lightness: 59.14%;
+    --imob-violet-500-chroma: 0.1931;
+    --imob-violet-500-hue: 313.6;
+
+    /* Violet 550 */
+    --imob-violet-550-lightness: 55.43%;
+    --imob-violet-550-chroma: 0.2052;
+    --imob-violet-550-hue: 313.9;
+
+    /* Violet 600 */
+    --imob-violet-600-lightness: 50.94%;
+    --imob-violet-600-chroma: 0.2144;
+    --imob-violet-600-hue: 313.2;
+
+    /* Violet 650 */
+    --imob-violet-650-lightness: 47.11%;
+    --imob-violet-650-chroma: 0.2224;
+    --imob-violet-650-hue: 313.7;
+
+    /* Violet 700 */
+    --imob-violet-700-lightness: 42.44%;
+    --imob-violet-700-chroma: 0.2119;
+    --imob-violet-700-hue: 312.4;
+
+    /* Violet 750 */
+    --imob-violet-750-lightness: 38.09%;
+    --imob-violet-750-chroma: 0.1911;
+    --imob-violet-750-hue: 311.5;
+
+    /* Violet 800 */
+    --imob-violet-800-lightness: 32.98%;
+    --imob-violet-800-chroma: 0.1651;
+    --imob-violet-800-hue: 311.9;
+
+    /* Violet 850 */
+    --imob-violet-850-lightness: 28.25%;
+    --imob-violet-850-chroma: 0.1427;
+    --imob-violet-850-hue: 310.2;
+
+    /* Violet 900 */
+    --imob-violet-900-lightness: 23.95%;
+    --imob-violet-900-chroma: 0.1205;
+    --imob-violet-900-hue: 311;
+
+    /* Violet 950 */
+    --imob-violet-950-lightness: 19.14%;
+    --imob-violet-950-chroma: 0.0967;
+    --imob-violet-950-hue: 310.2;
+}
+
+// -- neutral --
+:root {
+    /* Neutral 000 */
+    --imob-neutral-000-lightness: 100%;
+    --imob-neutral-000-chroma: 0;
+    --imob-neutral-000-hue: 0;
+
+    /* Neutral 025 */
+    --imob-neutral-025-lightness: 97.46%;
+    --imob-neutral-025-chroma: 0.0028;
+    --imob-neutral-025-hue: 286.3;
+
+    /* Neutral 050 */
+    --imob-neutral-050-lightness: 95.79%;
+    --imob-neutral-050-chroma: 0.0053;
+    --imob-neutral-050-hue: 275;
+
+    /* Neutral 100 */
+    --imob-neutral-100-lightness: 91.42%;
+    --imob-neutral-100-chroma: 0.012;
+    --imob-neutral-100-hue: 276;
+
+    /* Neutral 150 */
+    --imob-neutral-150-lightness: 87.05%;
+    --imob-neutral-150-chroma: 0.0183;
+    --imob-neutral-150-hue: 275.9;
+
+    /* Neutral 200 */
+    --imob-neutral-200-lightness: 82.73%;
+    --imob-neutral-200-chroma: 0.0236;
+    --imob-neutral-200-hue: 275.8;
+
+    /* Neutral 250 */
+    --imob-neutral-250-lightness: 78.2%;
+    --imob-neutral-250-chroma: 0.0305;
+    --imob-neutral-250-hue: 276.7;
+
+    /* Neutral 300 */
+    --imob-neutral-300-lightness: 74.59%;
+    --imob-neutral-300-chroma: 0.0358;
+    --imob-neutral-300-hue: 276.5;
+
+    /* Neutral 350 */
+    --imob-neutral-350-lightness: 70.15%;
+    --imob-neutral-350-chroma: 0.042;
+    --imob-neutral-350-hue: 275.3;
+
+    /* Neutral 400 */
+    --imob-neutral-400-lightness: 65.51%;
+    --imob-neutral-400-chroma: 0.0464;
+    --imob-neutral-400-hue: 278.2;
+
+    /* Neutral 450 */
+    --imob-neutral-450-lightness: 61.18%;
+    --imob-neutral-450-chroma: 0.0496;
+    --imob-neutral-450-hue: 277;
+
+    /* Neutral 500 */
+    --imob-neutral-500-lightness: 56.84%;
+    --imob-neutral-500-chroma: 0.0521;
+    --imob-neutral-500-hue: 275.8;
+
+    /* Neutral 550 */
+    --imob-neutral-550-lightness: 52.32%;
+    --imob-neutral-550-chroma: 0.054;
+    --imob-neutral-550-hue: 276.6;
+
+    /* Neutral 600 */
+    --imob-neutral-600-lightness: 48.66%;
+    --imob-neutral-600-chroma: 0.0561;
+    --imob-neutral-600-hue: 276.4;
+
+    /* Neutral 650 */
+    --imob-neutral-650-lightness: 44.06%;
+    --imob-neutral-650-chroma: 0.0569;
+    --imob-neutral-650-hue: 277.1;
+
+    /* Neutral 700 */
+    --imob-neutral-700-lightness: 39.76%;
+    --imob-neutral-700-chroma: 0.0529;
+    --imob-neutral-700-hue: 277;
+
+    /* Neutral 750 */
+    --imob-neutral-750-lightness: 35.13%;
+    --imob-neutral-750-chroma: 0.0511;
+    --imob-neutral-750-hue: 277.7;
+
+    /* Neutral 800 */
+    --imob-neutral-800-lightness: 30.72%;
+    --imob-neutral-800-chroma: 0.0459;
+    --imob-neutral-800-hue: 276.7;
+
+    /* Neutral 850 */
+    --imob-neutral-850-lightness: 27%;
+    --imob-neutral-850-chroma: 0.0409;
+    --imob-neutral-850-hue: 277.5;
+
+    /* Neutral 900 */
+    --imob-neutral-900-lightness: 22.43%;
+    --imob-neutral-900-chroma: 0.0333;
+    --imob-neutral-900-hue: 275.7;
+
+    /* Neutral 950 */
+    --imob-neutral-950-lightness: 18.2%;
+    --imob-neutral-950-chroma: 0.0301;
+    --imob-neutral-950-hue: 277.2;
+
+    /* Neutral 1000 */
+    --imob-neutral-1000-lightness: 0%;
+    --imob-neutral-1000-chroma: 0;
+    --imob-neutral-1000-hue: 0;
+}
+
+// -- dataport-red --
+:root {
+    /* Dataport Red 025 */
+    --imob-dataport-red-025-lightness: 97.36%;
+    --imob-dataport-red-025-chroma: 0.0077;
+    --imob-dataport-red-025-hue: 29.5;
+
+    /* Dataport Red 050 */
+    --imob-dataport-red-050-lightness: 95.43%;
+    --imob-dataport-red-050-chroma: 0.0159;
+    --imob-dataport-red-050-hue: 28.02;
+
+    /* Dataport Red 100 */
+    --imob-dataport-red-100-lightness: 91.44%;
+    --imob-dataport-red-100-chroma: 0.0306;
+    --imob-dataport-red-100-hue: 22.62;
+
+    /* Dataport Red 150 */
+    --imob-dataport-red-150-lightness: 86.8%;
+    --imob-dataport-red-150-chroma: 0.0473;
+    --imob-dataport-red-150-hue: 22.9;
+
+    /* Dataport Red 200 */
+    --imob-dataport-red-200-lightness: 83.04%;
+    --imob-dataport-red-200-chroma: 0.0631;
+    --imob-dataport-red-200-hue: 23.22;
+
+    /* Dataport Red 250 */
+    --imob-dataport-red-250-lightness: 79.69%;
+    --imob-dataport-red-250-chroma: 0.0735;
+    --imob-dataport-red-250-hue: 24.72;
+
+    /* Dataport Red 300 */
+    --imob-dataport-red-300-lightness: 75.31%;
+    --imob-dataport-red-300-chroma: 0.0892;
+    --imob-dataport-red-300-hue: 25.13;
+
+    /* Dataport Red 350 */
+    --imob-dataport-red-350-lightness: 70.75%;
+    --imob-dataport-red-350-chroma: 0.106;
+    --imob-dataport-red-350-hue: 24.48;
+
+    /* Dataport Red 400 */
+    --imob-dataport-red-400-lightness: 67.43%;
+    --imob-dataport-red-400-chroma: 0.1144;
+    --imob-dataport-red-400-hue: 24.87;
+
+    /* Dataport Red 450 */
+    --imob-dataport-red-450-lightness: 63.04%;
+    --imob-dataport-red-450-chroma: 0.1271;
+    --imob-dataport-red-450-hue: 24.44;
+
+    /* Dataport Red 500 */
+    --imob-dataport-red-500-lightness: 58.21%;
+    --imob-dataport-red-500-chroma: 0.1391;
+    --imob-dataport-red-500-hue: 25.34;
+
+    /* Dataport Red 550 */
+    --imob-dataport-red-550-lightness: 53.77%;
+    --imob-dataport-red-550-chroma: 0.1479;
+    --imob-dataport-red-550-hue: 24.4;
+
+    /* Dataport Red 600 */
+    --imob-dataport-red-600-lightness: 49.64%;
+    --imob-dataport-red-600-chroma: 0.1499;
+    --imob-dataport-red-600-hue: 24.41;
+
+    /* Dataport Red 650 */
+    --imob-dataport-red-650-lightness: 45.16%;
+    --imob-dataport-red-650-chroma: 0.1509;
+    --imob-dataport-red-650-hue: 24.05;
+
+    /* Dataport Red 700 */
+    --imob-dataport-red-700-lightness: 41.55%;
+    --imob-dataport-red-700-chroma: 0.1502;
+    --imob-dataport-red-700-hue: 24.71;
+
+    /* Dataport Red 750 */
+    --imob-dataport-red-750-lightness: 37%;
+    --imob-dataport-red-750-chroma: 0.1412;
+    --imob-dataport-red-750-hue: 24.71;
+
+    /* Dataport Red 800 */
+    --imob-dataport-red-800-lightness: 32.96%;
+    --imob-dataport-red-800-chroma: 0.1314;
+    --imob-dataport-red-800-hue: 24.33;
+
+    /* Dataport Red 850 */
+    --imob-dataport-red-850-lightness: 27.54%;
+    --imob-dataport-red-850-chroma: 0.1116;
+    --imob-dataport-red-850-hue: 24.96;
+
+    /* Dataport Red 900 */
+    --imob-dataport-red-900-lightness: 23.93%;
+    --imob-dataport-red-900-chroma: 0.0973;
+    --imob-dataport-red-900-hue: 26.03;
+
+    /* Dataport Red 950 */
+    --imob-dataport-red-950-lightness: 18.91%;
+    --imob-dataport-red-950-chroma: 0.0772;
+    --imob-dataport-red-950-hue: 27.71;
+}
+
+// -- gray --
+:root {
+    /* --imob-gray-025 */
+    --imob-gray-025-lightness: 97.72%;
+    --imob-gray-025-chroma: 0;
+    --imob-gray-025-hue: none;
+  
+    /* --imob-grey-050 */
+    --imob-grey-050-lightness: 96.19%;
+    --imob-grey-050-chroma: 0;
+    --imob-grey-050-hue: none;
+  
+    /* --imob-grey-100 */
+    --imob-grey-100-lightness: 91.57%;
+    --imob-grey-100-chroma: 0;
+    --imob-grey-100-hue: none;
+  
+    /* --imob-grey-150 */
+    --imob-grey-150-lightness: 86.89%;
+    --imob-grey-150-chroma: 0;
+    --imob-grey-150-hue: none;
+  
+    /* --imob-grey-200 */
+    --imob-grey-200-lightness: 82.94%;
+    --imob-grey-200-chroma: 0;
+    --imob-grey-200-hue: none;
+  
+    /* --imob-grey-250 */
+    --imob-grey-250-lightness: 78.94%;
+    --imob-grey-250-chroma: 0;
+    --imob-grey-250-hue: none;
+  
+    /* --imob-grey-300 */
+    --imob-grey-300-lightness: 74.07%;
+    --imob-grey-300-chroma: 0;
+    --imob-grey-300-hue: none;
+  
+    /* --imob-grey-350 */
+    --imob-grey-350-lightness: 69.96%;
+    --imob-grey-350-chroma: 0;
+    --imob-grey-350-hue: none;
+  
+    /* --imob-grey-400 */
+    --imob-grey-400-lightness: 65.78%;
+    --imob-grey-400-chroma: 0;
+    --imob-grey-400-hue: none;
+  
+    /* --imob-grey-450 */
+    --imob-grey-450-lightness: 61.54%;
+    --imob-grey-450-chroma: 0;
+    --imob-grey-450-hue: none;
+  
+    /* --imob-grey-500 */
+    --imob-grey-500-lightness: 56.34%;
+    --imob-grey-500-chroma: 0;
+    --imob-grey-500-hue: none;
+  
+    /* --imob-grey-550 */
+    --imob-grey-550-lightness: 52.81%;
+    --imob-grey-550-chroma: 0;
+    --imob-grey-550-hue: none;
+  
+    /* --imob-grey-600 */
+    --imob-grey-600-lightness: 48.32%;
+    --imob-grey-600-chroma: 0;
+    --imob-grey-600-hue: none;
+  
+    /* --imob-grey-650 */
+    --imob-grey-650-lightness: 43.71%;
+    --imob-grey-650-chroma: 0;
+    --imob-grey-650-hue: none;
+  
+    /* --imob-grey-700 */
+    --imob-grey-700-lightness: 39.94%;
+    --imob-grey-700-chroma: 0;
+    --imob-grey-700-hue: none;
+  
+    /* --imob-grey-750 */
+    --imob-grey-750-lightness: 35.1%;
+    --imob-grey-750-chroma: 0;
+    --imob-grey-750-hue: none;
+  
+    /* --imob-grey-800 */
+    --imob-grey-800-lightness: 31.1%;
+    --imob-grey-800-chroma: 0;
+    --imob-grey-800-hue: none;
+  
+    /* --imob-grey-850 */
+    --imob-grey-850-lightness: 26.97%;
+    --imob-grey-850-chroma: 0;
+    --imob-grey-850-hue: none;
+  
+    /* --imob-grey-900 */
+    --imob-grey-900-lightness: 22.67%;
+    --imob-grey-900-chroma: 0;
+    --imob-grey-900-hue: none;
+  
+    /* --imob-grey-950 */
+    --imob-grey-950-lightness: 18.15%;
+    --imob-grey-950-chroma: 0;
+    --imob-grey-950-hue: none;
+}

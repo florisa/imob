@@ -1,0 +1,93 @@
+@import 'utilities/mixins';
+
+html {
+  @include normalize;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--imob-color-layout-background-default);
+}
+
+[data-imob-theme="dark"],
+.imob-dark,
+[data-imob-theme="light"],
+.imob-light {
+  background-color: var(--imob-color-layout-background-default);
+}
+
+body:has(.imob-dialog[open]) {
+  overflow: hidden;
+}
+
+*:not(i) {
+  font-family: var(--imob-typography-font-family-default);
+}
+
+// All focusable elements
+area[href],
+iframe,
+[tabindex],
+[contentEditable="true"] {
+  &:not([tabindex="-1"]) {
+    &:focus {
+      border-radius: var(--imob-metric-border-radius-default, 0.25rem);
+      box-shadow: 0 0 0 2px var(--imob-color-action-on-default),
+      0 0 0 4px var(--imob-color-action-focus-border-inside),
+      0 0 0 6px var(--imob-color-action-focus-border-outside);
+
+      &:focus-visible {
+        outline: 0;
+      }
+    }
+  }
+}
+
+
+//imob-sr-only class
+.imob-sr-only {
+  @include imob-sr-only;
+
+  &-mobile {
+    display: inline; // Show by default
+
+    @media (max-width: 767px) {
+      @include imob-sr-only;
+    }
+  }
+}
+
+.imob-error {
+  @include normalize;
+  display: flex;
+  gap: var(--imob-metric-space-small, 8px);
+  align-items: flex-start;
+  align-self: stretch;
+
+  .imob-icon {
+    background-color: var(--imob-color-feedback-danger, #BD0F09) !important;
+    margin: var(--imob-metric-baseline-body-default-padding-top, 6px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-body-default-padding-bottom, 2px) var(--imob-metric-space-none, 0px);
+  }
+}
+
+.imob-number {
+  display: flex;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  padding: 2px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--imob-metric-border-radius-circle, 50%);
+  border: var(--imob-metric-border-width-default, 2px) solid var(--imob-color-layout-text-default, #171A2B);
+  color: var(--imob-color-layout-text-default, #171A2B);
+}

@@ -1,0 +1,149 @@
+@mixin light-color {
+    /* action */
+    --imob-color-action-default: oklch(var(--theme-action-default)); // TODO: Theming Variable
+    --imob-color-action-on-default: oklch(var(--imob-neutral-000-lightness) var(--imob-neutral-000-chroma) var(--imob-neutral-000-hue));
+    --imob-color-action-visited: oklch(var(--imob-violet-700-lightness) var(--imob-violet-700-chroma) var(--imob-violet-700-hue));
+    /* action-focus */
+    --imob-color-action-focus-background: oklch(var(--imob-neutral-700-lightness) var(--imob-neutral-700-chroma) var(--imob-neutral-700-hue));
+    --imob-color-action-focus-border-inside: oklch(var(--imob-neutral-500-lightness) var(--imob-neutral-500-chroma) var(--imob-neutral-500-hue));
+    --imob-color-action-focus-border-outside: oklch(var(--imob-neutral-200-lightness) var(--imob-neutral-200-chroma) var(--imob-neutral-200-hue));
+    /* action-state */
+    /* action-state-indicator */
+    --imob-color-action-state-indicator-default: var(--imob-color-action-default);
+    --imob-color-action-state-indicator-shade: var(--imob-color-layout-text-default);
+    --imob-color-action-state-indicator-tint: var(--imob-color-action-on-default);
+    /* action-state-opacity */
+    --imob-color-action-state-opacity-hover: 0.08;
+    --imob-color-action-state-opacity-pressed: 0.32;
+    --imob-color-action-state-opacity-selected: 0.12;
+    --imob-color-action-state-opacity-disabled: 0.4;
+    --imob-color-action-state-opacity-active: 0.16;
+    --imob-color-action-state-opacity-overlay: 0.72;
+
+    /* feedback */
+    --imob-color-feedback-danger: oklch(var(--imob-red-600-lightness) var(--imob-red-600-chroma) var(--imob-red-600-hue));
+    --imob-color-feedback-danger-background: oklch(var(--imob-red-050-lightness) var(--imob-red-050-chroma) var(--imob-red-050-hue));
+    --imob-color-feedback-info: oklch(var(--imob-lightblue-600-lightness) var(--imob-lightblue-600-chroma) var(--imob-lightblue-600-hue));
+    --imob-color-feedback-info-background: oklch(var(--imob-lightblue-050-lightness) var(--imob-lightblue-050-chroma) var(--imob-lightblue-050-hue));
+    --imob-color-feedback-success: oklch(var(--imob-turquoise-600-lightness) var(--imob-turquoise-600-chroma) var(--imob-turquoise-600-hue));
+    --imob-color-feedback-success-background: oklch(var(--imob-turquoise-050-lightness) var(--imob-turquoise-050-chroma) var(--imob-turquoise-050-hue));
+    --imob-color-feedback-warning: oklch(var(--imob-orange-600-lightness) var(--imob-orange-600-chroma) var(--imob-orange-600-hue));
+    --imob-color-feedback-warning-background: oklch(var(--imob-orange-050-lightness) var(--imob-orange-050-chroma) var(--imob-orange-050-hue));
+    /* feedback-loader */
+    --imob-color-feedback-loader: oklch(var(--imob-neutral-700-lightness) var(--imob-neutral-700-chroma) var(--imob-neutral-700-hue));
+    --imob-color-feedback-loader-background: oklch(var(--imob-neutral-100-lightness) var(--imob-neutral-100-chroma) var(--imob-neutral-100-hue));
+
+    /* form-inputs */
+    --imob-color-form-input-background: oklch(var(--imob-neutral-025-lightness) var(--imob-neutral-025-chroma) var(--imob-neutral-025-hue));
+    --imob-color-form-input-background-inverted: oklch(var(--imob-neutral-000-lightness) var(--imob-neutral-000-chroma) var(--imob-neutral-000-hue));
+    --imob-color-form-input-border: oklch(var(--imob-neutral-900-lightness) var(--imob-neutral-900-chroma) var(--imob-neutral-900-hue));
+
+    /* layout */
+    --imob-color-layout-border: oklch(var(--imob-neutral-300-lightness) var(--imob-neutral-300-chroma) var(--imob-neutral-300-hue));
+    /* layout-text */
+    --imob-color-layout-text-default: oklch(var(--imob-neutral-900-lightness) var(--imob-neutral-900-chroma) var(--imob-neutral-900-hue));
+    --imob-color-layout-text-inverse: oklch(var(--imob-neutral-025-lightness) var(--imob-neutral-025-chroma) var(--imob-neutral-025-hue));
+    --imob-color-layout-text-muted: oklch(var(--imob-neutral-700-lightness) var(--imob-neutral-700-chroma) var(--imob-neutral-700-hue));
+    /* layout-background */
+    --imob-color-layout-background-default: oklch(var(--imob-neutral-000-lightness) var(--imob-neutral-000-chroma) var(--imob-neutral-000-hue));
+    --imob-color-layout-background-hued: oklch(var(--imob-neutral-025-lightness) var(--imob-neutral-025-chroma) var(--imob-neutral-025-hue));
+    --imob-color-layout-background-overlay: oklch(var(--imob-neutral-1000-lightness) var(--imob-neutral-1000-chroma) var(--imob-neutral-1000-hue) / var(--imob-color-action-state-opacity-overlay)); // opacity
+
+    // Actins Hover Active
+    --imob-color-action-state-indicator-shade-hover: oklch(var(--imob-darkblue-600-lightness) var(--imob-darkblue-700-chroma) var(--imob-darkblue-700-hue));
+    --imob-color-action-state-indicator-shade-active: oklch(var(--imob-darkblue-500-lightness) var(--imob-darkblue-700-chroma) var(--imob-darkblue-700-hue));
+    // --imob-color-action-state-indicator-tint-hover: oklch(var(--imob-darkblue-025-lightness) var(--imob-darkblue-300-chroma) var(--imob-darkblue-300-hue));
+    // --imob-color-action-state-indicator-tint-active: oklch(var(--imob-darkblue-050-lightness) var(--imob-darkblue-300-chroma) var(--imob-darkblue-300-hue));
+
+    --imob-color-action-state-indicator-tint-hover: oklch(var(--imob-darkblue-050-lightness) var(--imob-darkblue-050-chroma) var(--imob-darkblue-050-hue));
+    --imob-color-action-state-indicator-tint-active: oklch(var(--imob-darkblue-100-lightness) var(--imob-darkblue-100-chroma) var(--imob-darkblue-100-hue));
+
+    // Opacity
+    --imob-color-action-state-indicator-tint-hover-opacity: oklch(var(--theme-action-default) / var(--imob-color-action-state-opacity-hover)); // opacity
+    --imob-color-action-state-indicator-tint-active-opacity: oklch(var(--theme-action-default) / var(--imob-color-action-state-opacity-active)); // opacity
+}
+
+@mixin dark-colors {
+    /* action */
+    --imob-color-action-default: oklch(var(--theme-action-default));
+    --imob-color-action-on-default: oklch(var(--imob-neutral-1000-lightness) var(--imob-neutral-1000-chroma) var(--imob-neutral-1000-hue));
+    --imob-color-action-visited: oklch(var(--imob-violet-300-lightness) var(--imob-violet-300-chroma) var(--imob-violet-300-hue));
+    /* action-focus */
+    --imob-color-action-focus-background: oklch(var(--imob-neutral-400-lightness) var(--imob-neutral-400-chroma) var(--imob-neutral-400-hue));
+    --imob-color-action-focus-border-inside: oklch(var(--imob-neutral-500-lightness) var(--imob-neutral-500-chroma) var(--imob-neutral-500-hue));
+    --imob-color-action-focus-border-outside: oklch(var(--imob-neutral-800-lightness) var(--imob-neutral-800-chroma) var(--imob-neutral-800-hue));
+    /* action-state */
+    /* action-state-indicator */
+    --imob-color-action-state-indicator-default: var(--imob-color-action-default);
+    --imob-color-action-state-indicator-shade: var(--imob-color-layout-text-default);
+    --imob-color-action-state-indicator-tint: var(--imob-color-action-on-default);
+    /* action-state-opacity */
+    --imob-color-action-state-opacity-hover: 0.12;
+    --imob-color-action-state-opacity-pressed: 0.32;
+    --imob-color-action-state-opacity-selected: 0.16;
+    --imob-color-action-state-opacity-disabled: 0.4;
+    --imob-color-action-state-opacity-active: 0.24;
+    --imob-color-action-state-opacity-overlay: 0.72;
+
+    /* feedback */
+    --imob-color-feedback-danger: oklch(var(--imob-red-400-lightness) var(--imob-red-400-chroma) var(--imob-red-400-hue));
+    --imob-color-feedback-danger-background: oklch(var(--imob-red-900-lightness) var(--imob-red-900-chroma) var(--imob-red-900-hue));
+    --imob-color-feedback-info: oklch(var(--imob-lightblue-400-lightness) var(--imob-lightblue-400-chroma) var(--imob-lightblue-400-hue));
+    --imob-color-feedback-info-background: oklch(var(--imob-lightblue-900-lightness) var(--imob-lightblue-900-chroma) var(--imob-lightblue-900-hue));
+    --imob-color-feedback-success: oklch(var(--imob-turquoise-400-lightness) var(--imob-turquoise-400-chroma) var(--imob-turquoise-400-hue));
+    --imob-color-feedback-success-background: oklch(var(--imob-turquoise-900-lightness) var(--imob-turquoise-900-chroma) var(--imob-turquoise-900-hue));
+    --imob-color-feedback-warning: oklch(var(--imob-orange-400-lightness) var(--imob-orange-400-chroma) var(--imob-orange-400-hue));
+    --imob-color-feedback-warning-background: oklch(var(--imob-orange-900-lightness) var(--imob-orange-900-chroma) var(--imob-orange-900-hue));
+    /* feedback-loader */
+    --imob-color-feedback-loader: oklch(var(--imob-neutral-050-lightness) var(--imob-neutral-050-chroma) var(--imob-neutral-050-hue));
+    --imob-color-feedback-loader-background: oklch(var(--imob-neutral-700-lightness) var(--imob-neutral-700-chroma) var(--imob-neutral-700-hue));
+
+    /* form-inputs */
+    --imob-color-form-input-background: oklch(var(--imob-neutral-900-lightness) var(--imob-neutral-900-chroma) var(--imob-neutral-900-hue));
+    --imob-color-form-input-background-inverted: oklch(var(--imob-neutral-1000-lightness) var(--imob-neutral-1000-chroma) var(--imob-neutral-1000-hue));
+    --imob-color-form-input-border: oklch(var(--imob-neutral-050-lightness) var(--imob-neutral-050-chroma) var(--imob-neutral-050-hue));
+
+    /* layout */
+    --imob-color-layout-border: oklch(var(--imob-neutral-700-lightness) var(--imob-neutral-700-chroma) var(--imob-neutral-700-hue));
+    /* layout-text */
+    --imob-color-layout-text-default: oklch(var(--imob-neutral-050-lightness) var(--imob-neutral-050-chroma) var(--imob-neutral-050-hue));
+    --imob-color-layout-text-inverse: oklch(var(--imob-neutral-950-lightness) var(--imob-neutral-950-chroma) var(--imob-neutral-950-hue));
+    --imob-color-layout-text-muted: oklch(var(--imob-neutral-300-lightness) var(--imob-neutral-300-chroma) var(--imob-neutral-300-hue));
+    /* layout-background */
+    --imob-color-layout-background-default: oklch(var(--imob-neutral-1000-lightness) var(--imob-neutral-1000-chroma) var(--imob-neutral-1000-hue));
+    --imob-color-layout-background-hued: oklch(var(--imob-neutral-950-lightness) var(--imob-neutral-950-chroma) var(--imob-neutral-950-hue));
+    --imob-color-layout-background-overlay: oklch(var(--imob-neutral-1000-lightness) var(--imob-neutral-1000-chroma) var(--imob-neutral-1000-hue) / var(--imob-color-action-state-opacity-overlay)); // opacity
+
+    // Actins Hover Active
+    --imob-color-action-state-indicator-shade-hover: oklch(var(--imob-darkblue-200-lightness) var(--imob-darkblue-300-chroma) var(--imob-darkblue-300-hue));
+    --imob-color-action-state-indicator-shade-active: oklch(var(--imob-darkblue-100-lightness) var(--imob-darkblue-300-chroma) var(--imob-darkblue-300-hue));
+
+    --imob-color-action-state-indicator-tint-hover: oklch(var(--imob-darkblue-950-lightness) var(--imob-darkblue-950-chroma) var(--imob-darkblue-950-hue));
+    --imob-color-action-state-indicator-tint-active: oklch(var(--imob-darkblue-900-lightness) var(--imob-darkblue-900-chroma) var(--imob-darkblue-900-hue));
+
+    // Opacity
+    --imob-color-action-state-indicator-tint-hover-opacity: oklch(var(--theme-action-default) / var(--imob-color-action-state-opacity-hover)); // opacity
+    --imob-color-action-state-indicator-tint-active-opacity: oklch(var(--theme-action-default) / var(--imob-color-action-state-opacity-active)); // opacity
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include dark-colors;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        @include light-color;
+    }
+}
+
+[data-imob-theme=light],
+.imob-light {
+    @include light-color;
+}
+
+[data-imob-theme=dark],
+.imob-dark {
+    @include dark-colors;
+}

@@ -1,0 +1,222 @@
+// Text Base
+@mixin text-base {
+  color: var(--imob-color-layout-text-default, #171A2B);
+  font-family: var(--imob-typography-font-family-default, "Fira Sans");
+  font-style: normal;
+  letter-spacing: var(--imob-metric-space-none, 0px);
+}
+
+// Text - Headings
+@mixin heading-display {
+  @include text-base;
+  padding: var(--imob-metric-baseline-heading-display-padding-top, 12px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-heading-display-padding-bottom, 12px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-adaptive-2x-large, 48px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-adaptive-2x-large, 56px);
+}
+
+@mixin heading-x-large {
+  @include text-base;
+  padding: var(--imob-metric-baseline-heading-x-large-padding-top, 9px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-heading-x-large-padding-bottom, 7px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-adaptive-x-large, 32px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-adaptive-x-large, 40px);
+}
+
+@mixin heading-large {
+  @include text-base;
+  padding: var(--imob-metric-baseline-heading-large-padding-top, 7px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-heading-large-padding-bottom, 9px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-adaptive-large, 26px);
+  font-weight: var(--imob-typography-font-weight-semi-bold, 600);
+  line-height: var(--imob-typography-line-height-adaptive-large, 32px);
+}
+
+@mixin heading-medium {
+  @include text-base;
+  padding: var(--imob-metric-baseline-heading-medium-padding-top, 5px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-heading-medium-padding-bottom, 3px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-adaptive-medium, 21px);
+  font-weight: var(--imob-typography-font-weight-semi-bold, 600);
+  line-height: var(--imob-typography-line-height-adaptive-medium, 24px);
+}
+
+@mixin heading-small {
+  @include text-base;
+  padding: var(--imob-metric-baseline-heading-small-padding-top, 6px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-heading-small-padding-bottom, 2px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-medium, 18px);
+  font-weight: var(--imob-typography-font-weight-semi-bold, 600);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+// Text - Title
+@mixin title-large {
+  @include text-base;
+  padding: var(--imob-metric-baseline-title-large-padding-top, 7px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-title-large-padding-bottom, 9px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-adaptive-large, 26px);
+  font-weight: var(--imob-typography-font-weight-semi-bold, 600);
+  line-height: var(--imob-typography-line-height-adaptive-large, 32px);
+}
+
+@mixin title-default {
+  @include text-base;
+  padding: var(--imob-metric-baseline-title-default-padding-top, 5px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-title-default-padding-bottom, 3px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-adaptive-medium, 21px);
+  font-weight: var(--imob-typography-font-weight-semi-bold, 600);
+  line-height: var(--imob-typography-line-height-adaptive-medium, 24px);
+}
+
+@mixin title-small {
+  @include text-base;
+  padding: var(--imob-metric-baseline-title-small-padding-top, 6px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-title-small-padding-bottom, 2px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-medium, 18px);
+  font-weight: var(--imob-typography-font-weight-semi-bold, 600);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+// Text - Body
+@mixin body-large {
+  @include text-base;
+  padding: var(--imob-metric-baseline-body-large-padding-top, 1px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-body-large-padding-bottom, 7px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-large, 21px);
+  font-weight: var(--imob-typography-font-weight-regular, 400);
+  line-height: var(--imob-typography-line-height-static-large, 32px);
+}
+
+@mixin body-default {
+  @include text-base;
+  padding: var(--imob-metric-baseline-body-default-padding-top, 6px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-body-default-padding-bottom, 2px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-medium, 18px);
+  font-weight: var(--imob-typography-font-weight-regular, 400);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+@mixin body-small {
+  @include text-base;
+  padding: var(--imob-metric-baseline-body-small-padding-top, 7px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-body-small-padding-bottom, 1px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-small, 16px);
+  font-weight: var(--imob-typography-font-weight-regular, 400);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+// Text - Preline
+@mixin preline-large {
+  @include text-base;
+  color: var(--imob-color-layout-text-muted, #404565);
+  padding: var(--imob-metric-baseline-preline-large-padding-top, 1px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-preline-large-padding-bottom, 7px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-large, 21px);
+  font-weight: var(--imob-typography-font-weight-regular, 400);
+  line-height: var(--imob-typography-line-height-static-large, 32px);
+}
+
+@mixin preline-default {
+  @include text-base;
+  color: var(--imob-color-layout-text-muted, #404565);
+  padding: var(--imob-metric-baseline-preline-default-padding-top, 6px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-preline-default-padding-bottom, 2px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-medium, 18px);
+  font-weight: var(--imob-typography-font-weight-regular, 400);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+@mixin preline-small {
+  @include text-base;
+  color: var(--imob-color-layout-text-muted, #404565);
+  padding: var(--imob-metric-baseline-preline-small-padding-top, 7px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-preline-small-padding-bottom, 1px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-small, 16px);
+  font-weight: var(--imob-typography-font-weight-regular, 400);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+// Text - Subline
+@mixin subline-large {
+  @include text-base;
+  color: var(--imob-color-layout-text-muted, #404565);
+  padding: var(--imob-metric-baseline-subline-large-padding-top, 1px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-subline-large-padding-bottom, 7px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-large, 21px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-static-large, 32px);
+}
+
+@mixin subline-default {
+  @include text-base;
+  color: var(--imob-color-layout-text-muted, #404565);
+  padding: var(--imob-metric-baseline-subline-default-padding-top, 6px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-subline-default-padding-bottom, 2px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-medium, 18px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+@mixin subline-small {
+  @include text-base;
+  color: var(--imob-color-layout-text-muted, #404565);
+  padding: var(--imob-metric-baseline-subline-small-padding-top, 7px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-subline-small-padding-bottom, 9px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-small, 16px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+// Text - Label
+@mixin label-large {
+  @include text-base;
+  padding: var(--imob-metric-baseline-label-large-padding-top, 1px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-label-large-padding-bottom, 7px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-large, 21px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-static-large, 32px);
+}
+
+@mixin label-default {
+  @include text-base;
+  padding: var(--imob-metric-baseline-label-default-padding-top, 6px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-label-default-padding-bottom, 2px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-medium, 18px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+@mixin label-small {
+  @include text-base;
+  padding: var(--imob-metric-baseline-label-small-padding-top, 7px) var(--imob-metric-space-none, 0px) var(--imob-metric-baseline-label-small-padding-bottom, 1px) var(--imob-metric-space-none, 0px);
+  font-size: var(--imob-typography-font-size-static-small, 16px);
+  font-weight: var(--imob-typography-font-weight-medium, 500);
+  line-height: var(--imob-typography-line-height-static-medium, 24px);
+}
+
+
+@mixin imob-sr-only {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important; // Fix for https://github.com/twbs/bootstrap/issues/25686
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+
+  // Fix for positioned table caption that could become anonymous cells
+  &:not(caption) {
+    position: absolute !important;
+  }
+}
+
+@mixin hint {
+  @include body-default;
+  color: var(--imob-color-layout-text-muted, #404565);
+}
+
+@mixin optional {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: var(--imob-metric-space-none, 0px) var(--imob-metric-space-small, 8px);
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+@mixin normalize {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@mixin normalize-media {
+  vertical-align: middle;
+}

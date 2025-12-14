@@ -1,0 +1,191 @@
+.imob-card {
+  display: flex;
+  padding: var(--imob-metric-space-none, 0px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--imob-metric-space-none, 0px);
+  flex-shrink: 0;
+
+  border-radius: var(--imob-metric-border-radius-default, 4px);
+  border: var(--imob-metric-border-width-light, 1px) solid var(--layout-border, #A5AAC3);
+  background: var(--imob-color-layout-background-default, #FFF);
+  height: 100%;
+
+  &--hug {
+    height: auto;
+
+    .imob-card__container {
+      height: auto;
+    }
+  }
+
+  &__media {
+    display: flex;
+    padding: 0px var(--imob-metric-space-none, 0px);
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    * {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &__container {
+    display: flex;
+    padding: var(--imob-metric-space-large, 24px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--imob-metric-space-default, 16px);
+    align-self: stretch;
+    height: 100%;
+  }
+
+  &__header {
+    display: flex;
+    padding: var(--imob-metric-space-none, 0px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--imob-metric-space-none, 0px);
+    align-self: stretch;
+  }
+
+  &__body {
+    display: flex;
+    padding: var(--imob-metric-space-none, 0px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--imob-metric-space-small, 8px);
+    align-self: stretch;
+    flex: 1 1 auto;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: var(--imob-metric-space-default, 16px);
+    align-items: flex-start;
+    gap: var(--imob-metric-space-default, 16px);
+    align-self: stretch;
+
+    .imob-btn {
+      flex: 1 1 0;
+      min-width: fit-content;
+    }
+  }
+
+  &--active {
+    position: relative;
+
+    .imob-link--stretched {
+      color: var(--imob-color-action-default, #1A3DA5);
+      letter-spacing: var(--imob-metric-space-none, 0px);
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: var(--imob-1, 1px);
+      /* 4.762% */
+      text-underline-offset: var(--imob-2, 2px);
+      /* 9.524% */
+      text-underline-position: from-font;
+
+      &:after {
+        position: absolute;
+        top: var(--imob-metric-space-none, 0px);
+        right: var(--imob-metric-space-none, 0px);
+        bottom: var(--imob-metric-space-none, 0px);
+        left: var(--imob-metric-space-none, 0px);
+        z-index: 1;
+        pointer-events: auto;
+        content: "";
+        background-color: transparent;
+      }
+
+      &:hover {
+        text-decoration-thickness: 3px;
+
+        /* 14.286% */
+        &:after {
+          background: var(--imob-color-action-state-indicator-tint-hover-opacity);
+        }
+      }
+
+      &:active {
+        &:after {
+          background: var(--imob-color-action-state-indicator-tint-active-opacity);
+        }
+      }
+
+      &:focus-visible {
+        outline: 0;
+
+        &:after {
+          border-radius: var(--imob-metric-border-radius-default, 0.25rem);
+          box-shadow: var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) 2px var(--imob-color-action-on-default), // TODO: Variable mit Design überprüfen
+          var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) 4px var(--imob-color-action-focus-border-inside),
+          var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) 6px var(--imob-color-action-focus-border-outside);
+
+        }
+      }
+    }
+
+  }
+
+  &--small {
+    .imob-card__container {
+      padding: var(--imob-metric-space-default, 16px);
+      gap: var(--imob-metric-space-small, 8px);
+
+      .imob-card__header {
+        .imob-preline {
+          @include preline-small;
+        }
+
+        .imob-title {
+          @include title-small;
+        }
+
+        .imob-subline {
+          @include subline-small;
+        }
+      }
+
+      .imob-card__body {
+        .imob-body {
+          @include body-small;
+        }
+      }
+    }
+  }
+
+  &--large {
+    .imob-card__container {
+      padding: var(--imob-metric-space-x-large, 32px);
+      gap: var(--imob-metric-space-large, 24px);
+
+      .imob-card__header {
+
+        .imob-preline {
+          @include preline-large;
+        }
+
+        .imob-title {
+          @include title-large;
+        }
+
+        .imob-subline {
+          @include subline-large;
+        }
+      }
+
+      .imob-card__body {
+        .imob-body {
+          @include body-large;
+        }
+      }
+    }
+  }
+
+}
