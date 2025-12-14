@@ -123,7 +123,7 @@
 
         &:after {
           border-radius: var(--imob-metric-border-radius-default, 0.25rem);
-          box-shadow: var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) 2px var(--imob-color-action-on-default), // TODO: Variable mit Design überprüfen
+          box-shadow: var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) 2px var(--imob-color-action-on-default),
           var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) 4px var(--imob-color-action-focus-border-inside),
           var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) var(--imob-metric-space-none, 0px) 6px var(--imob-color-action-focus-border-outside);
 

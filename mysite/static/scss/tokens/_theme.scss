@@ -1,6 +1,6 @@
 @mixin light-color {
     /* action */
-    --imob-color-action-default: oklch(var(--theme-action-default)); // TODO: Theming Variable
+    --imob-color-action-default: oklch(var(--theme-action-default));
     --imob-color-action-on-default: oklch(var(--imob-neutral-000-lightness) var(--imob-neutral-000-chroma) var(--imob-neutral-000-hue));
     --imob-color-action-visited: oklch(var(--imob-violet-700-lightness) var(--imob-violet-700-chroma) var(--imob-violet-700-hue));
     /* action-focus */
