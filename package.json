@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "sass:watch": "sass --watch mysite/static/scss/index.scss:mysite/static/css/index.css"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "sass": "^1.96.0"
+  },
+  "dependencies": {
+    "sass-migrator": "^2.5.6"
+  }
+}

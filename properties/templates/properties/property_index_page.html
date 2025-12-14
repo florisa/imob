@@ -2,12 +2,17 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-<div class="container" style="padding: 60px 0;">
-    <h1>{{ page.title }}</h1>
+<div class="imob-container">
+    <div class="imob-row">
+        <div class="imob-col-12">
+            <h1 class="imob-heading-display">{{ page.title }} TEST 2</h1>
+        </div>
+    </div>
+
     {% if page.intro %}
         <p>{{ page.intro|safe }}</p>
     {% endif %}
-    
+
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
         {% for property in properties %}
         <div style="background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
