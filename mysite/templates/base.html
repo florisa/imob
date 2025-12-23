@@ -33,9 +33,13 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
-
-        {% block content %}{% endblock %}
-
+        <div id="container">
+            <div class="tailwind css-myl2ny css-exq74d">
+                <div class="min-h-screen bg-white">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/mysite.js' %}"></script>
 

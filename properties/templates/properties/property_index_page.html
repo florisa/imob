@@ -2,32 +2,65 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-<div class="imob-container">
-    <div class="imob-row">
-        <div class="imob-col-12">
-            <h1 class="imob-heading-display">{{ page.title }} TEST 2</h1>
+<section class="bg-[#F8FAFB] py-20">
+    <div class="max-w-[1440px] mx-auto px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl text-[#324556] mb-4">{{ page.title }}</h2>
+            {% if page.intro %}
+                <p>{{ page.intro|safe }}</p>
+            {% endif %}
         </div>
     </div>
-
-    {% if page.intro %}
-        <p>{{ page.intro|safe }}</p>
-    {% endif %}
-
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {% for property in properties %}
-        <div style="background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-            {% if property.main_image %}
-                <img src="{{ property.main_image.url }}" style="width: 100%; height: 250px; object-fit: cover;">
-            {% endif %}
-            <div style="padding: 20px;">
-                <h3>{{ property.title }}</h3>
-                <p><strong>📍</strong> {{ property.city }}, {{ property.state }}</p>
-                <p style="color: #1A7F7E; font-size: 20px; font-weight: bold;">R$ {{ property.price }}</p>
-                <p>🛏️ {{ property.bedrooms }} | 🚿 {{ property.bathrooms }} | 📐 {{ property.area_sqm }}m²</p>
-                <a href="{% pageurl property %}" style="display: inline-block; background: #1A7F7E; color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; margin-top: 10px;">Ver detalhes</a>
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="relative">
+                    {% if property.main_image %}
+                        <img src="{{ property.main_image.url }}" style="width: 100%; height: 250px; object-fit: cover;">
+                    {% endif %}
+                    <div class="absolute top-4 left-4 bg-[#5B7A8E] text-white px-3 py-1 rounded-full text-sm">
+                        {{ property.city }}, {{ property.state }}
+                    </div>
+                </div>
+                <div class="p-6 space-y-4">
+                    <div class="flex items-baseline justify-between">
+                        <span class="text-3xl text-[#324556]">R$ {{ property.price }}</span>
+                    </div><div class="flex items-center gap-4 text-[#5B7A8E]">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bed w-4 h-4" aria-hidden="true">
+                            <path d="M2 4v16"></path>
+                            <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                            <path d="M2 17h20"></path>
+                            <path d="M6 8v9"></path>
+                        </svg>
+                        <span class="text-sm">{{ property.bedrooms }}</span>
+                    </div>
+                    <span class="text-gray-300">•</span>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car w-4 h-4" aria-hidden="true">
+                            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                            <circle cx="7" cy="17" r="2"></circle>
+                            <path d="M9 17h6"></path>
+                            <circle cx="17" cy="17" r="2"></circle>
+                        </svg>
+                        <span class="text-sm">{{ property.bathrooms }}</span>
+                    </div>
+                    <span class="text-gray-300">•</span>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize w-4 h-4" aria-hidden="true">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3"></path>
+                            <path d="M21 8V5a2 2 0 0 0-2-2h-3"></path>
+                            <path d="M3 16v3a2 2 0 0 0 2 2h3"></path>
+                            <path d="M16 21h3a2 2 0 0 0 2-2v-3"></path>
+                        </svg>
+                        <span class="text-sm">{{ property.area_sqm }}m²</span>
+                    </div>
+                </div>
+                    <p class="text-sm text-gray-600 leading-relaxed">{{ property.title }}</p>
+                    <button class="w-full bg-transparent border-2 border-[#5B7A8E] text-[#5B7A8E] hover:bg-[#5B7A8E] hover:text-white py-3 rounded-lg transition-colors">Ver detalhes</button>
+                </div>
             </div>
-        </div>
         {% endfor %}
     </div>
-</div>
+</section>
 {% endblock %}
