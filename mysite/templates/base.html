@@ -22,20 +22,26 @@
         {% if request.in_preview_panel %}
         <base target="_blank">
         {% endif %}
-
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/mysite.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 
         {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body>
         {% wagtailuserbar %}
-
-        {% block content %}{% endblock %}
-
+        <div id="container">
+            <div class="min-h-screen bg-white">
+                {% include 'partials/header.html' %}
+                <main>
+                    {% block content %}{% endblock %}
+                </main>
+                {% include 'partials/footer.html' %}
+            </div>
+        </div>
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/mysite.js' %}"></script>
 

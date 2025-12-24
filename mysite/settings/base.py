@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     "home",
     "search",
     "properties",
+    "contact",
+    "financing",
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
