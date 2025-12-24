@@ -2,11 +2,13 @@
   <div class="max-w-[1440px] mx-auto px-8">
     <div class="grid grid-cols-3 gap-12 mb-8">
       <div>
-        <img
-          src="/media/full-logo-dark.webp"
-          alt="Alicercee Imobiliária"
-          class="h-16 w-auto mb-4 brightness-200"
-        />
+        <a href="{% url 'home_page' %}">
+          <img
+            src="/media/full-logo-dark.webp"
+            alt="Alicercee Imobiliária"
+            class="h-16 w-auto mb-4 brightness-200"
+          />
+        </a>
         <p class="text-white/80 leading-relaxed">
           Construindo sonhos sobre bases sólidas em Teresina
         </p>
@@ -16,7 +18,7 @@
         <ul class="space-y-2">
           <li>
             <a
-              href="#imoveis"
+              href="{% url 'property_index_page' %}"
               class="text-white/80 hover:text-white transition-colors"
               >Imóveis</a
             >
