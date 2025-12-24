@@ -1,21 +1,437 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block body_class %}template-homepage{% endblock %}
-
-{% block extra_css %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
-
-{% block content %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
-
-{% endblock content %}
+{% extends "base.html" %} {% load static %} {% block content %}
+<section
+  class="bg-gradient-to-br from-[#EEF3F6] via-[#E0E7EC] to-[#D1D9E0] relative overflow-hidden"
+>
+  <div class="max-w-[1440px] mx-auto px-8 py-32 relative z-10">
+    <div
+      class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-10"
+    >
+      <div class="space-y-6">
+        <h1
+          class="text-4xl md:text-6xl text-[#324556] leading-tight font-light tracking-tight"
+          style="opacity: 1; transform: none"
+        >
+          {{ page.title|safe }}
+        </h1>
+        {% if page.intro %}
+        <p
+          class="text-lg md:text-xl text-[#5B7A8E] leading-relaxed max-w-2xl mx-auto"
+        >
+          {{ page.intro|safe }}
+        </p>
+        {% endif %}
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <button
+          class="bg-[#466075] hover:bg-[#324556] text-white px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2 text-lg shadow-lg shadow-[#466075]/20 w-full sm:w-auto"
+        >
+          Ver ofertas de imóveis<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right w-5 h-5"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg></button
+        ><button
+          class="bg-white border-2 border-[#5B7A8E] text-[#5B7A8E] hover:bg-[#5B7A8E] hover:text-white px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2 text-lg w-full sm:w-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-message-circle w-5 h-5"
+            aria-hidden="true"
+          >
+            <path
+              d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"
+            ></path></svg
+          >Falar no WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-white py-20">
+  <div class="max-w-[1440px] mx-auto px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl text-[#324556] mb-4">
+        Por que escolher a Alicercee?
+      </h2>
+      <p class="text-lg text-[#5B7A8E]">
+        Sua parceira de confiança em Teresina e região
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center text-center space-y-4 p-6">
+        <div
+          class="w-20 h-20 rounded-full bg-[#5B7A8E] flex items-center justify-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-check w-10 h-10"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl text-[#324556]">
+          Imóveis verificados em todo o Piauí
+        </h3>
+        <p class="text-[#5B7A8E] leading-relaxed">
+          Selecionamos cada imóvel com critérios rigorosos de qualidade e
+          localização para sua segurança.
+        </p>
+      </div>
+      <div class="flex flex-col items-center text-center space-y-4 p-6">
+        <div
+          class="w-20 h-20 rounded-full bg-[#5B7A8E] flex items-center justify-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-heart w-10 h-10"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl text-[#324556]">Atendimento humanizado</h3>
+        <p class="text-[#5B7A8E] leading-relaxed">
+          Entendemos que comprar um imóvel é uma decisão importante. Estamos ao
+          seu lado em cada etapa.
+        </p>
+      </div>
+      <div class="flex flex-col items-center text-center space-y-4 p-6">
+        <div
+          class="w-20 h-20 rounded-full bg-[#5B7A8E] flex items-center justify-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-landmark w-10 h-10"
+            aria-hidden="true"
+          >
+            <path d="M10 18v-7"></path>
+            <path
+              d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"
+            ></path>
+            <path d="M14 18v-7"></path>
+            <path d="M18 18v-7"></path>
+            <path d="M3 22h18"></path>
+            <path d="M6 18v-7"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl text-[#324556]">Apoio completo em financiamento</h3>
+        <p class="text-[#5B7A8E] leading-relaxed">
+          Orientamos você em todo o processo de financiamento com as melhores
+          condições do mercado.
+        </p>
+      </div>
+      <div class="flex flex-col items-center text-center space-y-4 p-6">
+        <div
+          class="w-20 h-20 rounded-full bg-[#5B7A8E] flex items-center justify-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-message-circle w-10 h-10"
+            aria-hidden="true"
+          >
+            <path
+              d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl text-[#324556]">Contato rápido pelo WhatsApp</h3>
+        <p class="text-[#5B7A8E] leading-relaxed">
+          Tire suas dúvidas e receba atendimento personalizado diretamente pelo
+          WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-[#EEF3F6] py-20">
+  <div class="max-w-[1440px] mx-auto px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl text-[#324556] mb-4">Serviços Especializados</h2>
+      <p class="text-lg text-[#5B7A8E]">
+        Soluções completas para suas necessidades: Investidores e Empresas.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div
+        data-slot="card"
+        class="text-card-foreground flex flex-col gap-6 rounded-xl border bg-white border-none shadow-lg hover:shadow-xl transition-shadow duration-300"
+      >
+        <div
+          data-slot="card-header"
+          class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-col items-center pt-8 pb-2"
+        >
+          <div
+            class="w-20 h-20 rounded-full bg-[#5B7A8E] flex items-center justify-center mb-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-clipboard-check w-10 h-10 text-white"
+              aria-hidden="true"
+            >
+              <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+              <path
+                d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+              ></path>
+              <path d="m9 14 2 2 4-4"></path>
+            </svg>
+          </div>
+          <h4
+            data-slot="card-title"
+            class="text-2xl text-[#324556] text-center"
+          >
+            Avaliação de Imóveis
+          </h4>
+        </div>
+        <div
+          data-slot="card-content"
+          class="px-6 [&amp;:last-child]:pb-6 text-center pb-4"
+        >
+          <p class="text-[#5B7A8E] leading-relaxed">
+            Avaliação precisa e mercadológica do seu imóvel em Teresina,
+            Parnaíba e região. Saiba o valor real do seu patrimônio com nossos
+            especialistas.
+          </p>
+        </div>
+        <div
+          data-slot="card-footer"
+          class="items-center px-6 [.border-t]:pt-6 flex justify-center pb-8"
+        >
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 border-[#5B7A8E] text-[#5B7A8E] hover:bg-[#5B7A8E] hover:text-white group"
+          >
+            Saiba mais
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        data-slot="card"
+        class="text-card-foreground flex flex-col gap-6 rounded-xl border bg-white border-none shadow-lg hover:shadow-xl transition-shadow duration-300"
+      >
+        <div
+          data-slot="card-header"
+          class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-col items-center pt-8 pb-2"
+        >
+          <div
+            class="w-20 h-20 rounded-full bg-[#5B7A8E] flex items-center justify-center mb-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-file-search w-10 h-10 text-white"
+              aria-hidden="true"
+            >
+              <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+              ></path>
+              <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+              <circle cx="11.5" cy="14.5" r="2.5"></circle>
+              <path d="M13.3 16.3 15 18"></path>
+            </svg>
+          </div>
+          <h4
+            data-slot="card-title"
+            class="text-2xl text-[#324556] text-center"
+          >
+            Vistoria de Imóveis
+          </h4>
+        </div>
+        <div
+          data-slot="card-content"
+          class="px-6 [&amp;:last-child]:pb-6 text-center pb-4"
+        >
+          <p class="text-[#5B7A8E] leading-relaxed">
+            Análise detalhada das condições do imóvel para compra ou venda.
+            Garantia de segurança e transparência na sua negociação.
+          </p>
+        </div>
+        <div
+          data-slot="card-footer"
+          class="items-center px-6 [.border-t]:pt-6 flex justify-center pb-8"
+        >
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 border-[#5B7A8E] text-[#5B7A8E] hover:bg-[#5B7A8E] hover:text-white group"
+          >
+            Saiba mais
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        data-slot="card"
+        class="text-card-foreground flex flex-col gap-6 rounded-xl border bg-white border-none shadow-lg hover:shadow-xl transition-shadow duration-300"
+      >
+        <div
+          data-slot="card-header"
+          class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-col items-center pt-8 pb-2"
+        >
+          <div
+            class="w-20 h-20 rounded-full bg-[#5B7A8E] flex items-center justify-center mb-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-key-round w-10 h-10 text-white"
+              aria-hidden="true"
+            >
+              <path
+                d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+              ></path>
+              <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <h4
+            data-slot="card-title"
+            class="text-2xl text-[#324556] text-center"
+          >
+            Gestão de Imóveis
+          </h4>
+        </div>
+        <div
+          data-slot="card-content"
+          class="px-6 [&amp;:last-child]:pb-6 text-center pb-4"
+        >
+          <p class="text-[#5B7A8E] leading-relaxed">
+            Gestão completa de aluguéis para proprietários. Cuidamos de todas as
+            etapas: desde contratos aos recebimentos para garantir sua
+            rentabilidade sem dor de cabeça.
+          </p>
+        </div>
+        <div
+          data-slot="card-footer"
+          class="items-center px-6 [.border-t]:pt-6 flex justify-center pb-8"
+        >
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 border-[#5B7A8E] text-[#5B7A8E] hover:bg-[#5B7A8E] hover:text-white group"
+          >
+            Saiba mais
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

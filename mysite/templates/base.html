@@ -22,7 +22,7 @@
         {% if request.in_preview_panel %}
         <base target="_blank">
         {% endif %}
-
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 
@@ -31,13 +31,15 @@
         {% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body>
         {% wagtailuserbar %}
         <div id="container">
-            <div class="tailwind css-myl2ny css-exq74d">
-                <div class="min-h-screen bg-white">
+            <div class="min-h-screen bg-white">
+                {% include 'partials/header.html' %}
+                <main>
                     {% block content %}{% endblock %}
-                </div>
+                </main>
+                {% include 'partials/footer.html' %}
             </div>
         </div>
         {# Global javascript #}

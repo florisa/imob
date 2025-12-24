@@ -1,0 +1,92 @@
+{% block content %}
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-[1440px] mx-auto px-8 py-4">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+          <a href="{% url 'property_index_page' %}">
+              <img src="/media/full-logo-light.webp" alt="Alicercee Imobiliaria" class="h-12 md:h-16 w-auto"
+              />
+          </a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <nav class="flex items-center gap-1 bg-[#F5F8FA] p-1.5 rounded-full">
+          <a
+            href="{% url 'property_index_page' %}"
+            class="px-5 py-2 rounded-full text-sm font-medium text-[#5B7A8E] hover:bg-white hover:text-[#324556] hover:shadow-sm transition-all duration-300"
+          >
+            Imóveis
+          </a>
+          <a
+            href="#lancamentos"
+            class="px-5 py-2 rounded-full text-sm font-medium text-[#5B7A8E] hover:bg-white hover:text-[#324556] hover:shadow-sm transition-all duration-300"
+          >
+            Lançamentos
+          </a>
+          <a
+            href="#financiamento"
+            class="px-5 py-2 rounded-full text-sm font-medium text-[#5B7A8E] hover:bg-white hover:text-[#324556] hover:shadow-sm transition-all duration-300"
+          >
+            Financiamento
+          </a>
+          <a
+            href="#contato"
+            class="px-5 py-2 rounded-full text-sm font-medium text-[#5B7A8E] hover:bg-white hover:text-[#324556] hover:shadow-sm transition-all duration-300"
+          >
+            Contato
+          </a>
+        </nav>
+        <div
+          class="flex items-center gap-2 text-sm font-medium border-l pl-8 border-gray-200"
+        >
+          <button class="text-[#324556]">PT</button
+          ><span class="text-gray-300">|</span
+          ><button class="text-gray-400 hover:text-[#324556] transition-colors">
+            EN</button
+          ><span class="text-gray-300">|</span
+          ><button class="text-gray-400 hover:text-[#324556] transition-colors">
+            ES
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 md:hidden">
+        <div
+          class="flex items-center gap-2 text-xs font-medium bg-gray-50 px-2 py-1 rounded-md border border-gray-100"
+        >
+          <button class="text-[#324556]">PT</button
+          ><span class="text-gray-300">|</span
+          ><button class="text-gray-400">EN</button
+          ><span class="text-gray-300">|</span
+          ><button class="text-gray-400">ES</button>
+        </div>
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 size-9 rounded-md text-[#324556]"
+          type="button"
+          aria-haspopup="dialog"
+          aria-expanded="false"
+          aria-controls="radix-:r0:"
+          data-state="closed"
+          data-slot="sheet-trigger"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu h-6 w-6"
+            aria-hidden="true"
+          >
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}

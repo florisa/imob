@@ -1,7 +1,8 @@
 {
   "scripts": {
     "sass:watch": "sass --watch mysite/static/scss/index.scss:mysite/static/css/index.css",
-    "tailwind:watch": "tailwindcss -i mysite/static/scss/index.scss -o mysite/static/css/index.css --watch"
+    "tailwind:watch": "tailwindcss -i mysite/static/scss/index.scss -o mysite/static/css/index.css --watch",
+    "format": "prettier --write '**/*.{js,jsx,json,css,scss,md,html}'"
   },
   "devDependencies": {
     "prettier": "^3.7.4",
