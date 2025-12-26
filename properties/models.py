@@ -37,13 +37,15 @@ class PropertyPage(Page):
     )
 
     address = models.CharField(max_length=255)
+    area = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     zipcode = models.CharField(max_length=20)
     
     bedrooms = models.IntegerField()
-    bathrooms = models.DecimalField(max_digits=3, decimal_places=1)
-    area_sqm = models.DecimalField(max_digits=8, decimal_places=2)
+    bathrooms = models.IntegerField()
+    area_sqm = models.IntegerField()
+    garage_spaces = models.IntegerField(default=0)
     
     price = models.DecimalField(max_digits=15, decimal_places=2)
     description = RichTextField()
@@ -62,6 +64,7 @@ class PropertyPage(Page):
         
         MultiFieldPanel([
             FieldPanel('address'),
+            FieldPanel('area'),
             FieldPanel('city'),
             FieldPanel('state'),
             FieldPanel('zipcode'),
@@ -71,6 +74,7 @@ class PropertyPage(Page):
             FieldPanel('bedrooms'),
             FieldPanel('bathrooms'),
             FieldPanel('area_sqm'),
+            FieldPanel('garage_spaces')
         ], heading="Características"),
         
         FieldPanel('price'),
