@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% load wagtailcore_tags %} {% block content %}
+{% extends "base.html" %} {% load wagtailcore_tags %} {% load formatting %} {% block content %}
 <section class="bg-[#F8FAFB] py-20" id="imóveis">
   <div class="max-w-[1440px] mx-auto px-8">
     <div class="text-center mb-16">
@@ -28,7 +28,7 @@
         </div>
         <div class="p-6 space-y-4">
           <div class="flex items-baseline justify-between">
-            <span class="text-3xl text-[#324556]">R$ {{ property.price }}</span>
+            <span class="text-3xl text-[#324556]">R$ {{ property.price|br_decimal }}</span>
           </div>
           <div class="flex items-center gap-4 text-[#5B7A8E]">
             <div class="flex items-center gap-1">
@@ -74,10 +74,7 @@
                 <path d="M9 17h6"></path>
                 <circle cx="17" cy="17" r="2"></circle>
               </svg>
-              <span class="text-sm"
-                >{{ property.garage_spaces }} vaga{% if property.garage_spaces >
-                1 %}s{% endif %}</span
-              >
+              <span class="text-sm">{{ property.garage_spaces }} vaga{% if property.garage_spaces > 1 %}s{% endif %}</span>
             </div>
             <span class="text-gray-300">•</span>
             <div class="flex items-center gap-1">

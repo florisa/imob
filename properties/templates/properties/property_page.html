@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% load wagtailcore_tags %} {% block content %}
+{% extends "base.html" %} {% load wagtailcore_tags %} {% load formatting %} {% block content %}
 <section class="bg-[#F8FAFB] py-20" id="imóveis">
   <div class="max-w-[1440px] mx-auto px-8">
     <a
@@ -86,7 +86,7 @@
       >
         <p>Preço</p>
         <div style="font-size: 32px; font-weight: bold; margin: 10px 0">
-          R$ {{ page.price }}
+          R$ {{ page.price|br_decimal }}
         </div>
         <p style="margin-top: 30px">Interessado? Fale conosco!</p>
         <a
