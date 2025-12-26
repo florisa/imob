@@ -1,7 +1,9 @@
 @import "tailwindcss";
+@import "./global.scss";
 
 :root {
-  --font-display: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  --font-display:
+    Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
 }
 
 body {

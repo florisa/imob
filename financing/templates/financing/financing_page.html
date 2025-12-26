@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block content %}
+<!--suppress ALL -->
 <section class="bg-white py-20" id="financiamento">
   <div class="max-w-[1440px] mx-auto px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -103,10 +104,15 @@
                     <span
                       class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
                       >R$</span
-                    ><input
+                    >
+                    <label for="down-payment-input" class="sr-only"
+                      >Campo de Valor de Entrada</label
+                    >
+                    <input
                       type="number"
                       data-slot="input"
                       class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive pl-10 bg-white border-gray-200"
+                      id="down-payment-input"
                       value="60000"
                     />
                   </div>
@@ -117,23 +123,43 @@
                     data-slot="slider"
                     class="relative flex w-full touch-none items-center select-none data-[disabled]:opacity-50 data-[orientation=vertical]:h-full data-[orientation=vertical]:min-h-44 data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col py-4"
                     style="--radix-slider-thumb-transform: translateX(-50%)"
-                    ><span
+                  >
+                    <label for="down-payment-slider" class="sr-only"
+                      >Seletor de Rango de Valor de Entrada</label
+                    >
+                    <input
+                      id="down-payment-slider"
+                      type="range"
+                      min="30000"
+                      max="270000"
+                      value="60000"
+                      step="1000"
+                      class="absolute w-full h-full opacity-0 cursor-pointer z-50 pointer-events-auto"
+                      style="top: 0; left: 0; right: 0; bottom: 0"
+                    />
+                    <span
                       data-orientation="horizontal"
                       data-slot="slider-track"
-                      class="bg-muted relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-1.5"
-                      ><span
+                      class="bg-muted relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-1.5 pointer-events-none"
+                    >
+                      <span
+                        id="down-payment-slider-range"
                         data-orientation="horizontal"
                         data-slot="slider-range"
-                        class="bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
-                        style="left: 0%; right: 87.5%"
-                      ></span></span
-                    ><span
+                        class="bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full pointer-events-none"
+                        style="left: 0; right: 87.5%"
+                      ></span>
+                    </span>
+                    <span
+                      id="down-payment-slider-thumb-wrapper"
                       style="
                         transform: var(--radix-slider-thumb-transform);
                         position: absolute;
                         left: calc(12.5% + 6px);
                       "
-                      ><span
+                      class="pointer-events-none"
+                    >
+                      <span
                         role="slider"
                         aria-valuemin="30000"
                         aria-valuemax="270000"
@@ -141,42 +167,64 @@
                         data-orientation="horizontal"
                         tabindex="0"
                         data-slot="slider-thumb"
-                        class="border-primary bg-background ring-ring/50 block size-4 shrink-0 rounded-full border shadow-sm transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
+                        class="border-primary bg-background ring-ring/50 block size-4 shrink-0 rounded-full border shadow-sm transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 pointer-events-none"
                         data-radix-collection-item=""
                         aria-valuenow="60000"
                         style=""
-                      ></span></span
-                  ></span>
+                        id="down-payment-slider-thumb"
+                      ></span>
+                    </span>
+                  </span>
                 </div>
                 <div class="space-y-2">
                   <label
                     data-slot="label"
                     class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-[#324556]"
-                    >Prazo (Anos): 30</label
-                  ><span
+                    >Prazo (Anos): <span id="period-value">30</span></label
+                  >
+                  <span
                     dir="ltr"
                     data-orientation="horizontal"
                     aria-disabled="false"
                     data-slot="slider"
                     class="relative flex w-full touch-none items-center select-none data-[disabled]:opacity-50 data-[orientation=vertical]:h-full data-[orientation=vertical]:min-h-44 data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col py-4"
                     style="--radix-slider-thumb-transform: translateX(-50%)"
-                    ><span
+                  >
+                    <label for="period-slider" class="sr-only"
+                      >Seletor de Rango de Prazo</label>
+                    <input
+                      id="period-slider"
+                      type="range"
+                      min="5"
+                      max="35"
+                      value="30"
+                      step="1"
+                      class="absolute w-full h-full opacity-0 cursor-pointer z-50 pointer-events-auto"
+                      style="top: 0; left: 0; right: 0; bottom: 0"
+                    />
+                    <span
                       data-orientation="horizontal"
                       data-slot="slider-track"
-                      class="bg-muted relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-1.5"
-                      ><span
+                      class="bg-muted relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-1.5 pointer-events-none"
+                    >
+                      <span
+                        id="period-slider-range"
                         data-orientation="horizontal"
                         data-slot="slider-range"
-                        class="bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
-                        style="left: 0%; right: 16.6667%"
-                      ></span></span
-                    ><span
+                        class="bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full pointer-events-none"
+                        style="left: 0; right: 16.6667%"
+                      ></span>
+                    </span>
+                    <span
+                      id="period-slider-thumb-wrapper"
                       style="
                         transform: var(--radix-slider-thumb-transform);
                         position: absolute;
                         left: calc(83.3333% - 5.33333px);
                       "
-                      ><span
+                      class="pointer-events-none"
+                    >
+                      <span
                         role="slider"
                         aria-valuemin="5"
                         aria-valuemax="35"
@@ -184,12 +232,14 @@
                         data-orientation="horizontal"
                         tabindex="0"
                         data-slot="slider-thumb"
-                        class="border-primary bg-background ring-ring/50 block size-4 shrink-0 rounded-full border shadow-sm transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
+                        class="border-primary bg-background ring-ring/50 block size-4 shrink-0 rounded-full border shadow-sm transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 pointer-events-none"
                         data-radix-collection-item=""
                         aria-valuenow="30"
                         style=""
-                      ></span></span
-                  ></span>
+                        id="period-slider-thumb"
+                      ></span>
+                    </span>
+                  </span>
                 </div>
               </div>
               <div
@@ -238,4 +288,5 @@
     </div>
   </div>
 </section>
+<script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
 {% endblock %}
