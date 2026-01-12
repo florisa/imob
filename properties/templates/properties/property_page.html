@@ -1,49 +1,111 @@
-{% extends "base.html" %}
-{% load wagtailcore_tags %}
+{% extends "base.html" %} {% load wagtailcore_tags %} {% load formatting %} {% block content %}
+<section class="bg-[#F8FAFB] py-20" id="imóveis">
+  <div class="max-w-[1440px] mx-auto px-8">
+    <a
+      href="{% pageurl page.get_parent %}"
+      style="
+        color: #1a7f7e;
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: inline-block;
+      "
+      >← Voltar</a
+    >
 
-{% block content %}
-<div class="container" style="padding: 60px 0;">
-    <a href="{% pageurl page.get_parent %}" style="color: #1A7F7E; text-decoration: none; margin-bottom: 20px; display: inline-block;">← Voltar</a>
-    
-    <h1>{{ page.title }}</h1>
-    
+    <h1 class="text-4xl text-[#324556] mb-4">{{ page.title }}</h1>
     {% if page.main_image %}
-    <img src="{{ page.main_image.url }}" style="width: 100%; max-width: 700px; border-radius: 8px; margin: 30px 0;">
-    {% endif %}
-    
-    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px;">
-        <div>
-            <h2>Informações</h2>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;"><strong>Referência:</strong> {{ page.reference }}</li>
-                <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;"><strong>Tipo:</strong> {{ page.get_property_type_display }}</li>
-                <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;"><strong>Endereço:</strong> {{ page.address }}</li>
-                <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;"><strong>Cidade:</strong> {{ page.city }} - {{ page.state }}</li>
-                <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;"><strong>Quartos:</strong> {{ page.bedrooms }}</li>
-                <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;"><strong>Banheiros:</strong> {{ page.bathrooms }}</li>
-                <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb;"><strong>Área:</strong> {{ page.area_sqm }} m²</li>
-                <li style="padding: 10px 0;"><strong>Status:</strong> {% if page.is_available %}<span style="color: green;">✓ Disponível</span>{% else %}<span style="color: red;">✗ Indisponível</span>{% endif %}</li>
-            </ul>
-            
-            <h2 style="margin-top: 40px;">Descrição</h2>
-            {{ page.description|safe }}
-            
-            {% if page.gallery_images.all %}
-            <h2 style="margin-top: 40px;">Galeria</h2>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
-                {% for image in page.gallery_images.all %}
-                <img src="{{ image.image.url }}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
-                {% endfor %}
-            </div>
-            {% endif %}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16">
+      <img
+        src="{{ page.main_image.url }}"
+        alt="Imagem principal de {{ page.title }}"
+        style="border-radius: 8px; width: 100%; object-fit: cover"
+      />
+      {% endif %}
+      <div>
+        <h2 class="text-2xl text-[#324556] mb-4">Informações</h2>
+        <ul style="list-style: none; padding: 0">
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Referência:</strong> {{ page.reference }}
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Tipo:</strong> {{ page.get_property_type_display }}
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Descrição:</strong> {{ page.description|striptags }}
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Endereço:</strong> {{ page.address }}
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Cidade:</strong> {{ page.city }} - {{ page.state }}
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Quartos:</strong> {{ page.bedrooms }}
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Banheiros:</strong> {{ page.bathrooms }}
+          </li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #e5e7eb">
+            <strong>Área:</strong> {{ page.area_sqm }} m²
+          </li>
+          <li style="padding: 10px 0">
+            <strong>Status:</strong> {% if page.is_available %}<span
+              style="color: green"
+              >✓ Disponível</span
+            >{% else %}<span style="color: red">✗ Indisponível</span>{% endif %}
+          </li>
+        </ul>
+
+        {% if page.gallery_images.all %}
+        <h2 class="text-2xl text-[#324556] mb-4">Galeria</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {% for image in page.gallery_images.all %}
+          <img
+            alt="Imagem da galeria de {{ page.title }}"
+            src="{{ image.image.url }}"
+            style="
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 6px;
+            "
+          />
+          {% endfor %}
         </div>
-        
-        <div style="background: linear-gradient(135deg, #1A7F7E, #2FA59F); color: white; padding: 30px; border-radius: 8px; height: fit-content;">
-            <p>Preço</p>
-            <div style="font-size: 32px; font-weight: bold; margin: 10px 0;">R$ {{ page.price }}</div>
-            <p style="margin-top: 30px;">Interessado? Fale conosco!</p>
-            <a href="https://wa.me/5511999999999" style="display: block; background: #25d366; color: white; padding: 12px; border-radius: 4px; text-decoration: none; text-align: center; margin-top: 15px; font-weight: bold;">💬 WhatsApp</a>
+        {% endif %}
+      </div>
+
+      <div
+        style="
+          background: linear-gradient(135deg, #1a7f7e, #2fa59f);
+          color: white;
+          padding: 30px;
+          border-radius: 8px;
+          height: fit-content;
+        "
+      >
+        <p>Preço</p>
+        <div style="font-size: 32px; font-weight: bold; margin: 10px 0">
+          R$ {{ page.price|br_decimal }}
         </div>
+        <p style="margin-top: 30px">Interessado? Fale conosco!</p>
+        <a
+          href="https://wa.me/5511999999999"
+          style="
+            display: block;
+            background: #25d366;
+            color: white;
+            padding: 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+          "
+          >💬 WhatsApp</a
+        >
+      </div>
     </div>
-</div>
+  </div>
+</section>
 {% endblock %}
